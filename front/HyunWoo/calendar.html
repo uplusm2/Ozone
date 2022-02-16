@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-    <link href='/HyunWoo/fullcalendar-5.10.2/lib/main.css' rel='stylesheet' />
-    <script src='/HyunWoo/fullcalendar-5.10.2/lib/main.js'></script>
+    <link href='/front/HyunWoo/fullcalendar-5.10.2/lib/main.css' rel='stylesheet' />
+    <script src='/front/HyunWoo/fullcalendar-5.10.2/lib/main.js'></script>
     <title>Document</title>
     <style>
         html, body{
@@ -42,6 +42,7 @@
         }
         .content{
             margin-right : 120px;
+            padding-top: 3%;
         }
         .content #calendar{
             width: 80%;
@@ -55,7 +56,7 @@
         .fc-daygrid-day.fc-day{
             background-color: white;
         }
-        .fc-daygrid-day.fc-day.fc-day-mon.fc-day-today {
+        .fc-daygrid-day.fc-day.fc-day-today {
             background-color: #F5F8FF;
         } 
         .fc-daygrid-event.fc-daygrid-block-event.fc-h-event{
@@ -75,6 +76,9 @@
         .fc-today-button.fc-button.fc-button-primary{
             background-color: #F5F8FF;
             color: rgb(92, 111, 126);
+        }
+        .bi.bi-calendar2-event.icon{
+            color: #9bacff;
         }
     </style>
 </head>
@@ -96,7 +100,7 @@
  
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
     
-    <script src="/HyunWoo/header/js/bootstrap.min.js"></script>
+    <script src="/front/hyunWoo/header/js/bootstrap.min.js"></script>
 
     <script>
         var today = new Date().toISOString().substring(0,10);
@@ -120,7 +124,7 @@
                     },
                     {
                     title: 'memo',
-                    url: 'http://127.0.0.1:5500/memo.html',
+                    url: 'http://127.0.0.1:5500/front/HyunWoo/memo.html',
                     start: '2022-02-14'
                     },
                     {
