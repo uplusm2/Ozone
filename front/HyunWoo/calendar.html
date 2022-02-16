@@ -103,12 +103,21 @@
     <script src="/front/hyunWoo/header/js/bootstrap.min.js"></script>
 
     <script>
+        $('.fc-button-group').text("<input type='text'>");
         var today = new Date().toISOString().substring(0,10);
         document.addEventListener('DOMContentLoaded', function() {
             var calendarEl = document.getElementById('calendar');
             var calendar = new FullCalendar.Calendar(calendarEl, {
+                customButtons: {
+                    myCustomButton: {
+                    text: '메모작성',
+                    click: function() {
+                        location.href="http://127.0.0.1:5500/front/HyunWoo/memoAdd.html";
+                    }
+                    }
+                },
                 headerToolbar: {
-                    left: 'prevYear,prev,next,nextYear today',
+                    left: 'prevYear,prev,next,nextYear myCustomButton',
                     center: 'title',
                     right: 'dayGridMonth,dayGridWeek,dayGridDay'
                 },
