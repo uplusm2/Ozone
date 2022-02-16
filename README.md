@@ -12,7 +12,7 @@
   * 예) ozone - project - ProjectService.java
 * 프로젝트 폴더: 프로젝트명을 기입
   * 예) ozone
-* 분류 폴더: 사이드 바를 기준으로 폴더 생성하며 Camel 표기법 사용
+* 분류 폴더: 사이드 바를 기준으로 폴더 생성하며 단수 명사 권장
   * 예) project, mail
 * 소스 파일: 파스칼 표기법으로 작성
   * 예) ProjectService
