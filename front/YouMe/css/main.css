@@ -521,6 +521,62 @@ header h1 {
 }
 
 
+/* 페이지바 */
+.project-board .board .pagebar {
+   width: 350px;
+   font-size: 19px;
+   margin: 10px auto;
+   margin-top: 510px;
+   color: #cdcdcd;
+}
+.project-board .pagebar li {
+   margin: 5px;
+   font-weight: 400;
+   cursor: pointer;
+}
+.project-board .pagebar li.active {
+   color: #9bacff;
+   font-weight: 500;
+}
+.project-board .pagebar li:hover {
+   color: #9bacff;
+}
+.project-board .pagebar li.glyphicon {
+   top: 3px;
+}
+
+
+/* 게시판 검색 */
+.project-board .search {
+   width: 290px;
+   /* font-size: 19px; */
+   margin: 10px auto;
+   /* margin-top: 510px; */
+   /* color: #cdcdcd; */
+}
+.project-board .search select:focus,
+.project-board .search input:focus {
+   outline: 0;
+}
+.project-board .search select {
+   border: 1px solid #cdcdcd;
+   background: #F5F8FF;
+   margin-right: -4px;
+   border-radius: 20px 0px 0px 20px;
+   padding: 3px;
+   padding-left: 10px; 
+   border-right: 0px;
+}
+.project-board .search input {
+   border: 1px solid #cdcdcd;
+   background: #F5F8FF;
+   padding: 4.2px;
+   padding-left: 6px; 
+   border-left: 0px;
+   border-radius: 0px 20px 20px 0px;
+}
+
+
 /* detail */
 .project-detail img {
    width: 30px;
