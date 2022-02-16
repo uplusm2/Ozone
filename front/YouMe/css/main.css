@@ -548,10 +548,11 @@ header h1 {
 
 /* 게시판 검색 */
 .project-board .search {
-   width: 290px;
+   position: relative;
+   width: 350px;
    /* font-size: 19px; */
    margin: 10px auto;
-   /* margin-top: 510px; */
+   margin-top: -10px;
    /* color: #cdcdcd; */
 }
 .project-board .search select:focus,
@@ -563,17 +564,45 @@ header h1 {
    background: #F5F8FF;
    margin-right: -4px;
    border-radius: 20px 0px 0px 20px;
-   padding: 3px;
+   padding: 5px;
    padding-left: 10px; 
    border-right: 0px;
+   position: relative;
+}
+.project-board .search:after {
+   content: '';
+   position: absolute;
+   left: 0;
+   top: 7px;
+   width: 77px;
+   height: 20px;
+   /* background: rgba(0, 0, 0, 0.274); */
+   border-right: 1px solid #cdcdcd;
+   z-index: 1;
 }
 .project-board .search input {
+   position: relative;
+   top: -1px;
    border: 1px solid #cdcdcd;
    background: #F5F8FF;
-   padding: 4.2px;
+   width: 260px;
+   padding: 6.2px;
    padding-left: 6px; 
    border-left: 0px;
    border-radius: 0px 20px 20px 0px;
+}
+.project-board .search i {
+   position: absolute;
+   right: 20px;
+   top: 3px;
+   width: 28px;
+   height: 28px;
+   font-size: 16px;
+   padding-left: 6px;
+   padding-top: 2px;
+   border-radius: 50%;
+   background: #9BACFF;
+   color: #fff;
 }
 
 
