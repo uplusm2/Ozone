@@ -20,7 +20,7 @@
 
 # Commit Rule
 * 브랜치 생성: 이름_분류 폴더_소스 파일
-  * 예) YouMe_project_ozone
+  * 예) YouMe_calendar_board
 * commit message는 자유롭게 작성
   * commit 전 프로젝트 pull 진행
 * pull request의 제목 및 내용은 자유롭게 작성
