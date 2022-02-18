@@ -437,7 +437,7 @@ header h1 {
    margin: 0px auto;
    /* margin-top: 70px; */
    text-align: center;
-   font-weight: 700;
+   font-weight: 500;
 }
 .project-board .board table th {
    font-weight: 700;
@@ -454,28 +454,32 @@ header h1 {
 .project-board .board table td {
    font-size: 17px;
 }
-.project-board .board table th:nth-child(2),
-.project-board .board table td:nth-child(2) {
+.project-board .board table th:nth-child(1),
+.project-board .board table td:nth-child(1) {
    padding-left: 20px;
    width: 350px;
    text-align: left;
    color: #5C6F7E;
    cursor: pointer;
+   position: relative;
 }
-.project-board .board table th:nth-child(2) {
+.project-board .board table th:nth-child(1) {
    text-align: center;
 }
 .project-board .board table td:nth-child(1) {
+   left: 60px;
+}
+.project-board .board table td:nth-child(2) {
    color: #fff;
    text-align: center;
    padding: 0;
    width: 100px;
    position: relative;
 }
-.project-board .board table td:nth-child(3) {
+.project-board .board table td:nth-child(2) {
    width: 250px;
 }
-.project-board .board table td:nth-child(1) .status {
+.project-board .board table td:nth-child(5) .status {
    position: absolute;
    left: 42px;
    top: 8px;
@@ -493,33 +497,36 @@ header h1 {
 .project-board .board table  .completed {
    background: #FE9E62;
 }
-.project-board .board table td:nth-child(4) {
+.project-board .board table td:nth-child(5) {
    /* color: #c9c9c9; */
    font-weight: 400;
    font-size: 15px;
+   position: relative;
+   top: 2px;
+   color: #fff;
 }
 .project-board .board table td:nth-child(5) {
    position: relative;
 }
-.project-board .board table td:nth-child(5) .priority {
+.project-board .board table td:nth-child(1) .priority {
    position: absolute;
    width: 55px;
-   left: 60px;
-   top: 12px;
+   left: -40px;
+   top: 13px;
    height: 18px;
    line-height: 18px;
-   /* padding: 0px 7px; */
+   padding: 0px 7px;
    text-align: center;
-   font-size: 14px;
+   font-size: 13px;
    font-weight: 400;
    color: #5C6F7E;
    background: #E3ECFF;
    border-radius: 20px;
 }
-.project-board .board table td:nth-child(5) .priority.middle {
+.project-board .board table td:nth-child(1) .priority.middle {
    background: #FFECE0;
 }
-.project-board .board table td:nth-child(5) .priority.high {
+.project-board .board table td:nth-child(1) .priority.high {
    background: #FCE0E5;
    padding: 1px 5px 1px 5px;
 }
