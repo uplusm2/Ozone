@@ -16,6 +16,19 @@
 		<put-attribute name="content" value="/WEB-INF/views/board/{1}.jsp"></put-attribute>
 		
 	</definition>
+	
+	<definition name="calendar.*" template="/WEB-INF/views/calendar/calendar.jsp">
+		
+		<!-- asset -->
+		<!-- <put-attribute name="asset" value="/WEB-INF/views/inc/asset.jsp"></put-attribute> -->
+		
+		<!-- header -->
+		<!-- <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp"></put-attribute> -->
+		
+		<!-- content -->
+		<put-attribute name="content" value="/WEB-INF/views/calendar/{1}.jsp"></put-attribute> 
+		
+	</definition>
 
 </tiles-definitions>
 
