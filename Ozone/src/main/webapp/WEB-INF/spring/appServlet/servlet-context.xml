@@ -30,7 +30,7 @@
 		<beans:property name="viewClass" value="org.springframework.web.servlet.view.tiles2.TilesView"></beans:property>
 	</beans:bean>
 	
-	<context:component-scan base-package="com.test.spring" />
+	<context:component-scan base-package="com.test.ozone" />
 	
 	
 	
