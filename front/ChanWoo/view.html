@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>view</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="layout/main.css">
+    <link rel="stylesheet" href="layout/header.css">
+    <style>
+
+        
+
+        .view-table th{
+            width : 50px;
+            height : 30px;
+        }
+
+        .view-table .view-title{
+            width : 600px;
+            font-size : 15px;
+
+        }
+
+        .view-table .view-content{
+            width : 600px;
+            height : 300px;
+            font-size : 15px;
+        }
+
+        .view-table .view-file{
+            font-size : 15px;
+        }
+
+       
+    </style>
+
+</head>
+<body>
+    <div class = "header">
+        <div class="bi bi-list icon" onclick = ""></div>
+        <div class="bi bi-calendar2-event icon" onclick = ""></div>
+        <div class="bi bi-envelope icon" onclick = ""></div>
+        <div class="bi bi-window-sidebar icon" onclick = ""></div>
+        <div class="bi bi-file-earmark-check icon" onclick = ""></div>
+        <div class="bi bi-folder2 icon" onclick = ""></div>
+        <div class="bi bi-card-list icon" onclick = ""></div>
+        <div class="bi bi-person-video2 icon" onclick = ""></div>
+    </div>
+    <div class = "container">
+        <div class = "title">
+            <div class="titlename">보관함</div>
+        </div>
+        <div class = "sidebar">
+            <ul class= "menu">
+                <li onclick = "">개인보관함</li>
+                <li onclick = "">공유보관함</li>
+                <li onclick = "">프로젝트보관함</li>
+                <li onclick = "">사진 보관함</li>
+                <li onclick = "">문서 보관함</li>
+            </ul>
+        </div>
+        <div class>
+            <div class = "tle title-view">보관 글 제목</div>
+            <br>
+            <table class = "view-table">
+                <tr>
+                    <th>제목</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>내용</th>
+                    <td></td>
+                </tr>
+                <tr>
+                    <th>파일</th>
+                    <td></td>
+                </tr>
+            </table>
+            <div class = "btncon">
+                <input type = "button" class = "btn btn-share" value = "공개" onclick="location.href='sharecheck.html'">
+                <input type = "button" class = "btn btn-share" value = "비공개">
+                <input type = "button" class = "btn btn-share" value = "공유">
+                <input type = "button" class = "btn btn-delete" value = "삭제">
+            </div>
+
+        </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    
+    <script src="layout/js/bootstrap.min.js"></script>
+</body>
+</html>
