@@ -1,3 +1,5 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -118,19 +120,19 @@
             <table  class="table-bordered">
                 <tr>
                     <th>제목</th>
-                    <td><input type="text" class="form-control" placeholder="제목을 입력해 주세요."></td>
+                    <td>제목을 입력해 주세요.</td>
                 </tr>
                 <tr>
                     <th>참조인</th>
-                    <td><input type="text" class="form-control" placeholder="참조인을 입력해 주세요. 예 ) @이혜인 , @잘레시안"></td>
+                    <td>@이혜인 , @잘레시안</td>
                 </tr>
                 <tr>
                     <th>Meeting 지역</th>
-                    <td><input type="button" value="Meeting 지역 선택" class="btn btn-info"></td>
+                    <td><input type="button" value="Meeting 지역" class="btn btn-info"></td>
                 </tr>
                 <tr>
                     <th>내용</th>
-                    <td><input type="text" class="form-control" placeholder="내용을 입력해 주세요."></td>
+                    <td>내용을 입력해 주세요.</td>
                 </tr>
             </table>
         </div>
