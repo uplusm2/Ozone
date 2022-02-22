@@ -4,29 +4,29 @@
 
 <tiles-definitions>
 
-	<definition name="board.*" template="/WEB-INF/views/layout/board.jsp">
+	<!-- <definition name="board.*" template="/WEB-INF/views/layout/board.jsp">
 		
-		<!-- asset -->
+		asset
 		<put-attribute name="asset" value="/WEB-INF/views/inc/asset.jsp"></put-attribute>
 		
-		<!-- header -->
+		header
 		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp"></put-attribute>
 		
-		<!-- content -->
+		content
 		<put-attribute name="content" value="/WEB-INF/views/board/{1}.jsp"></put-attribute>
 		
-	</definition>
+	</definition> -->
 	
-	<definition name="calendar.*" template="/WEB-INF/views/calendar/calendar.jsp">
+	<definition name="calendar.*" template="/WEB-INF/views/calendar/base.jsp">
 		
 		<!-- asset -->
-		<!-- <put-attribute name="asset" value="/WEB-INF/views/inc/asset.jsp"></put-attribute> -->
+		<put-attribute name="asset" value="/WEB-INF/views/inc/calendarAsset.jsp"></put-attribute> 
 		
 		<!-- header -->
-		<!-- <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp"></put-attribute> -->
+		<put-attribute name="header" value="/WEB-INF/views/calendar/CalendarHeader.jsp"></put-attribute>
 		
 		<!-- content -->
-		<!-- <put-attribute name="content" value="/WEB-INF/views/calendar/{1}.jsp"></put-attribute> --> 
+		<put-attribute name="content" value="/WEB-INF/views/calendar/{1}.jsp"></put-attribute>
 		
 	</definition>
 
