@@ -30,6 +30,20 @@
 		
 	</definition>
 
+	<definition name="memo.*" template="/WEB-INF/views/calendar/base.jsp">
+		
+		<!-- asset -->
+		<put-attribute name="asset" value="/WEB-INF/views/inc/calendarAsset.jsp"></put-attribute> 
+		
+		<!-- header -->
+		<put-attribute name="header" value="/WEB-INF/views/calendar/CalendarHeader.jsp"></put-attribute>
+		
+		<!-- content -->
+		<put-attribute name="content" value="/WEB-INF/views/memo/{1}.jsp"></put-attribute>
+		
+	</definition>
+	
+	
 </tiles-definitions>
 
 

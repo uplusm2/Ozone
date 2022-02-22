@@ -60,7 +60,7 @@
                 myCustomButton: {
                 text: '메모작성',
                 click: function() {
-                    location.href="http://127.0.0.1:5500/front/HyunWoo/memoAdd.html";
+                    location.href="/memoadd";
                 }
                 }
             },

@@ -18,13 +18,14 @@
         }
 
         .header .icon{
-            font-size : 30px;
+            font-size : 50px;
             color : #C9C9C9;
             margin-left : 17px;
             opacity: 0.7;
             height : 75px;
             width : 75px;
-            padding-top : 25px;
+            margin-top:25%;
+            padding-top : 25xp;
             border-bottom : 1px solid white;
         }
 
