@@ -2,6 +2,13 @@
 <!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
 
 <mapper namespace="calendar">
+
+	<select id="list" parameterType="String" resultType="com.test.ozone.calendar.CalendarDTO">
+		select 
+		    * 
+		from tblpersonalschedule c inner join tbluser u 
+		    on c.userseq = u.seq where u.email = #{id} ;
+	</select>
 	
 	
 	
