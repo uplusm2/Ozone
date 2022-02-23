@@ -21,7 +21,7 @@ public class CalendarService implements ICalendarService {
 	public List<CalendarDTO> list(HttpSession session) {
 		
 		List<CalendarDTO> list = new ArrayList<CalendarDTO>();
-		list = dao.list(session.getAttribute("id"));
+		list = dao.list(""+session.getAttribute("id"));
 		
 		return list;
 	}

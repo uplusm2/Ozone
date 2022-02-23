@@ -25,11 +25,25 @@ public class CalendarController {
 	@GetMapping("/calendar")
 	public String calendar(HttpSession session,Model model) {
 		
+		session.setAttribute("id", "user1");
+		
 		List<CalendarDTO> list = new ArrayList<CalendarDTO>();
-		list = service.list(session);
+//		list = service.list(session);
 		
 		return "calendar.calendar";
 	}
+	
+	@GetMapping("/addcalendar")
+	public String addcalendar(HttpSession session,Model model) {
+		
+		session.setAttribute("id", "user1");
+		
+		List<CalendarDTO> list = new ArrayList<CalendarDTO>();
+//		list = service.list(session);
+		
+		return "calendar.addcalendar";
+	}
+
 	
 	
 

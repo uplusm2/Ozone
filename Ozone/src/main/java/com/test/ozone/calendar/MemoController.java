@@ -34,7 +34,7 @@ public class MemoController {
 		
 		
 		
-		return "redirect:/calendar";
+		return "redirect:/addcalendar";
 	}
 	
 	@GetMapping("/memodetail")
@@ -51,6 +51,31 @@ public class MemoController {
 		
 		
 		return "memo.memolist";
+	}
+	
+	@GetMapping("/addmemolist")
+	public String addmemoList(HttpServletRequest req, HttpSession session, HttpServletResponse resp, Model model) {
+		
+		
+		
+		return "memo.addmemolist";
+	}
+	
+	@GetMapping("/addmemodetail")
+	public String addmemodetail(HttpServletRequest req, HttpSession session, HttpServletResponse resp, Model model) {
+		
+		
+		
+		return "memo.addmemodetail";
+	}
+	
+	// map 관련 두가지
+	@GetMapping("/addlocation")
+	public String addlocation(HttpServletRequest req, HttpSession session, HttpServletResponse resp, Model model) {
+		
+		
+		
+		return "map.addlocation";
 	}
 	
 	

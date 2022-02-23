@@ -18,11 +18,9 @@ public class CalendarDAO {
 		this.template = template;
 	}
 
-	public List<CalendarDTO> list(Object object) {
+	public List<CalendarDTO> list(String id) {
 		
-		
-		
-		return template.selectList("calendar.list",object);
+		return template.selectList("calendar.list",id);
 	}
 	
 	
