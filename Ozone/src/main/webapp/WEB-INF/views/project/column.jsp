@@ -45,9 +45,9 @@
          <div class="state completed">Completed</div>
          <div class="column column-no-state">
             <ul class="project">
-               <li class="title">ì§±ê¸° 2ì£¼ ìì±<span class="high">Highð¥</span></li>
+               <li class="title">짱기 2주 완성<span class="high">High🔥</span></li>
                <li>
-                  <img src="img/ì ë¯¸ íì°.png">
+                  <img src="img/유미 후우.png">
                </li>
                <li>Mar 05, 2022</li>
             </ul>
@@ -55,85 +55,85 @@
          </div>
          <div class="column column-not-started">
             <ul class="project">
-               <li class="title">ê³ êµ¬ë§ì¼(MVC)<span class="low">Low</span></li>
+               <li class="title">고구마켓(MVC)<span class="low">Low</span></li>
                <li>
-                  <img src="img/ì ë¯¸ íì°.png">
-                  <img src="img/ì°ë ì¬ë.png">
-                  <img src="img/ì¸ì¬íë ë¸ë­ì´.png">
-                  <img src="img/íì´ííì°.png">
-                  <img src="img/í°ì§ íì°ë.png">
-                  <img src="img/ì¤ íì¸ë.png">
+                  <img src="img/유미 후우.png">
+                  <img src="img/우는 사람.png">
+                  <img src="img/인사하는 노랭이.png">
+                  <img src="img/화이팅현우.png">
+                  <img src="img/터진 현우님.png">
+                  <img src="img/오 혜인님.png">
                   <!-- <span>+3</span> -->
                </li>
                <li>Feb 20, 2022</li>
             </ul>
             <ul class="project">
-               <li class="title">íì´ë íë¡ì í¸ ì¤ì¡´ <span class="high">Highð¥</span></li>
+               <li class="title">파이널 프로젝트 오존 <span class="high">High🔥</span></li>
                <li>
-                  <img src="img/ì ë¯¸ íì°.png">
-                  <img src="img/ê°ë°ì.png">
-                  <img src="img/ë¿ì°.png">
-                  <img src="img/ì¤ íì¸ë.png">
-                  <img src="img/íì´ííì°.png">
-                  <img src="img/í°ì§ í¤ì¸ë.png">
+                  <img src="img/유미 후우.png">
+                  <img src="img/개발자.png">
+                  <img src="img/뿌우.png">
+                  <img src="img/오 혜인님.png">
+                  <img src="img/화이팅현우.png">
+                  <img src="img/터진 헤인님.png">
                </li>
                <li>Mar 15, 2022</li>
             </ul>
             <ul class="project">
-               <li class="title">ë¤ì§ê° ë¨ê¸°<span class="middle">Middle</span></li>
+               <li class="title">뒤지개 단기<span class="middle">Middle</span></li>
                <li>
-                  <img src="img/ì ë¯¸ íì°.png">
-                  <img src="img/ì°ë½ ì¤ì.png">
-                  <img src="img/í°ì§ íì°ë.png">
+                  <img src="img/유미 후우.png">
+                  <img src="img/연락 준영.png">
+                  <img src="img/터진 현우님.png">
                </li>
                <li>Feb 22, 2022</li>
             </ul>
          </div>
          <div class="column column-in-progress">
             <ul class="project">
-               <li class="title">êµì¡ ì¼í° DB êµ¬ì¶<span>Low</span></li>
+               <li class="title">교육 센터 DB 구축<span>Low</span></li>
                <li>
-                  <img src="img/ì ë¯¸ íì°.png">
-                  <img src="img/í°ì§ í¤ì¸ë.png">
-                  <img src="img/ê°ë°ì.png">
-                  <img src="img/ì¤ íì¸ë.png">
-                  <img src="img/ì°ë½ ì¤ì.png">
+                  <img src="img/유미 후우.png">
+                  <img src="img/터진 헤인님.png">
+                  <img src="img/개발자.png">
+                  <img src="img/오 혜인님.png">
+                  <img src="img/연락 준영.png">
                </li>
                <li>Nov 05, 2022</li>
             </ul>
             <ul class="project">
-               <li class="title">ìê³ ë¦¬ì¦ ë§ì¤í°<span class="middle">Middle</span></li>
+               <li class="title">알고리즘 마스터<span class="middle">Middle</span></li>
                <li>
-                  <img src="img/ì ë¯¸ íì°.png">
-                  <img src="img/ì¸ì¬ í¤ì¸.png">
-                  <img src="img/ë¿ì°íì°.png">
-                  <img src="img/ì¸ì¬íë ë¸ë­ì´.png">
+                  <img src="img/유미 후우.png">
+                  <img src="img/인사 헤인.png">
+                  <img src="img/뿌우현우.png">
+                  <img src="img/인사하는 노랭이.png">
                </li>
                <li>Dec 30, 3030</li>
             </ul>
          </div>
          <div class="column column-completed">
             <ul class="project">
-               <li class="title">ìë° ì½ì ì©ì©ëë <span class="middle">Middle</span></li>
+               <li class="title">자바 콘솔 용용랜드 <span class="middle">Middle</span></li>
                <li>
-                  <img src="img/ì ë¯¸ íì°.png">
-                  <img src="img/ë¿ì°íì°.png">
-                  <img src="img/ì°ë½ ì¤ì.png">
-                  <img src="img/í°ì§ íì°ë.png">
-                  <img src="img/íì´ííì°.png">
-                  <img src="img/ë¿ì°.png">
+                  <img src="img/유미 후우.png">
+                  <img src="img/뿌우현우.png">
+                  <img src="img/연락 준영.png">
+                  <img src="img/터진 현우님.png">
+                  <img src="img/화이팅현우.png">
+                  <img src="img/뿌우.png">
                </li>
                <li>Oct 23, 2021</li>
             </ul>
             <ul class="project">
-               <li class="title">ë¿ë¦¬ ê¹ì êµ­ì¬ <span class="low">Low</span></li>
-               <li><img src="img/ì ë¯¸ íì°.png"></li>
+               <li class="title">뿌리 깊은 국사 <span class="low">Low</span></li>
+               <li><img src="img/유미 후우.png"></li>
                <li>Feb 07, 2022</li>
             </ul>
             <ul class="project">
-               <li class="title">ê°ë°ì í¬í¸í´ë¦¬ì¤<span class="high">Highð¥</span></li>
+               <li class="title">개발자 포트폴리오<span class="high">High🔥</span></li>
                <li>
-                  <img src="img/ì ë¯¸ íì°.png">
+                  <img src="img/유미 후우.png">
                </li>
                <li>Jan 02, 2022</li>
             </ul>

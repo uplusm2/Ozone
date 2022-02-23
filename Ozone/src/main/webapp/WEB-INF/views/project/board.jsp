@@ -49,212 +49,212 @@
                   <th>Status</th>
                </tr>
                <tr>
-                  <td><span class="priority high">Highð¥</span>ê³ êµ¬ë§ì¼(Servlete+JSP)</td>
+                  <td><span class="priority high">High🔥</span>고구마켓(Servlete+JSP)</td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
                      <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
                   <td><span class="status not-started">Not Started</span></td>
                </tr>
                <tr>
-                  <td><span class="priority low">Low</span>ê³ êµ¬ë§ì¼(Servlete+JSP)</td>
+                  <td><span class="priority low">Low</span>고구마켓(Servlete+JSP)</td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
                      <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
                   <td><span class="status completed">Completed</span></td>
                </tr>
                <tr>
-                  <td><span class="priority low">Low</span>ê³ êµ¬ë§ì¼(Servlete+JSP)</td>
+                  <td><span class="priority low">Low</span>고구마켓(Servlete+JSP)</td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
                      <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
                   <td><span class="status not-started">Not Started</span></td>
                </tr>
                <tr>
-                  <td><span class="priority middle">Middle</span>ê³ êµ¬ë§ì¼(Servlete+JSP)</td>
+                  <td><span class="priority middle">Middle</span>고구마켓(Servlete+JSP)</td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
                      <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
                   <td><span class="status in-progress">In Progress</span></td>
                </tr>
                <tr>
-                  <td><span class="priority high">Highð¥</span>ê³ êµ¬ë§ì¼(Servlete+JSP)</td>
+                  <td><span class="priority high">High🔥</span>고구마켓(Servlete+JSP)</td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
                      <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
                   <td><span class="status completed">Completed</span></td>
                </tr>
                <tr>
-                  <td><span class="priority high">Highð¥</span>ê³ êµ¬ë§ì¼(Servlete+JSP)</td>
+                  <td><span class="priority high">High🔥</span>고구마켓(Servlete+JSP)</td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
                      <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
                   <td><span class="status not-started">Not Started</span></td>
                </tr>
                <tr>
-                  <td><span class="priority middle">Middle</span>ê³ êµ¬ë§ì¼(Servlete+JSP)</td>
+                  <td><span class="priority middle">Middle</span>고구마켓(Servlete+JSP)</td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
                      <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
                   <td><span class="status completed">Completed</span></td>
                </tr>
                <tr>
-                  <td><span class="priority low">Low</span>ê³ êµ¬ë§ì¼(Servlete+JSP)</td>
+                  <td><span class="priority low">Low</span>고구마켓(Servlete+JSP)</td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
                      <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
                   <td><span class="status not-started">Not Started</span></td>
                </tr>
                <tr>
-                  <td><span class="priority high">Highð¥</span>ê³ êµ¬ë§ì¼(Servlete+JSP)</td>
+                  <td><span class="priority high">High🔥</span>고구마켓(Servlete+JSP)</td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
                      <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
                   <td><span class="status in-progress">In Progress</span></td>
                </tr>
                <tr>
-                  <td><span class="priority middle">Middle</span>ê³ êµ¬ë§ì¼(Servlete+JSP)</td>
+                  <td><span class="priority middle">Middle</span>고구마켓(Servlete+JSP)</td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
                      <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
                   <td><span class="status completed">Completed</span></td>
                </tr>
                <!-- <tr>
-                  <td>ìì© êµì¡ ì¼í°(DB) </td>
+                  <td>쌍용 교육 센터(DB) </td>
                   <td><span class="status not-started">Not Started</span></td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 22, 2022</td>
                   <td><span class="priority middle">Middle</span></td>
                </tr>
                <tr>
-                  <td>í´ë¡  ì½ë© ëª¨ì </td>
+                  <td>클론 코딩 모음 </td>
                   <td><span class="status not-started">Not Started</span></td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 22, 2022</td>
-                  <td><span class="priority high">Highð¥</span></td>
+                  <td><span class="priority high">High🔥</span></td>
                </tr>
                <tr>
-                  <td>ê°ì ì¥í° </td>
+                  <td>감자 장터 </td>
                   <td><span class="status completed">Completed</span></td>
                   <td>
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 22, 2022</td>
                   <td><span class="priority middle">Middle</span></td>
                </tr>
                <tr>
-                  <td>ìê³ ë¦¬ì¦ </td>
+                  <td>알고리즘 </td>
                   <td><span class="status not-started">Not Started</span></td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 22, 2022</td>
-                  <td><span class="priority high">Highð¥</span></td>
+                  <td><span class="priority high">High🔥</span></td>
                </tr>
                <tr>
-                  <td>ê³ êµ¬ë§ì¼(Servlete+JSP) </td>
+                  <td>고구마켓(Servlete+JSP) </td>
                   <td><span class="status not-started">Not Started</span></td>
                   <td>
-                     <img src="img/ì¤ íì°ë.png">
+                     <img src="img/오 현우님.png">
                   </th>
                   <td>Feb 22, 2022</td>
                   <td><span class="priority low">Low</span></td>
                </tr>
                <tr>
-                  <td>íì´ë ì¤ì¡´ </td>
+                  <td>파이널 오존 </td>
                   <td><span class="status in-progress">In Progress</span></td>
                   <td>
                      <img src="img/KakaoTalk_20220104_002701045.png">
                      <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 22, 2022</td>
                   <td><span class="priority middle">Middle</span></td>
                </tr>
                <tr>
-                  <td>í¬í¸í´ë¦¬ì¤ ì¤ë¹ </td>
+                  <td>포트폴리오 준비 </td>
                   <td><span class="status not-started">Not Started</span></td>
                   <td>
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 22, 2022</td>
-                  <td><span class="priority high">Highð¥</span></td>
+                  <td><span class="priority high">High🔥</span></td>
                </tr>
                <tr>
-                  <td>ì©ì©ëë </td>
+                  <td>용용랜드 </td>
                   <td><span class="status completed">Completed</span></td>
                   <td>
-                     <img src="img/ì¤ íì°ë.png">
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 현우님.png">
+                     <img src="img/오 혜인님.png">
                      <img src="img/KakaoTalk_20220205_020132636.jpg">
                   </th>
                   <td>Feb 22, 2022</td>
                   <td><span class="priority low">Low</span></td>
                </tr>
                <tr>
-                  <td>ë¿ë¦¬ ê¹ì êµ­ì¬ </td>
+                  <td>뿌리 깊은 국사 </td>
                   <td><span class="status in-progress">In Progress</span></td>
                   <td>
-                     <img src="img/ì¤ íì¸ë.png">
+                     <img src="img/오 혜인님.png">
                   </th>
                   <td>Feb 22, 2022</td>
                   <td><span class="priority low">Low</span></td>
@@ -279,11 +279,11 @@
             <div class="search">
                <form>
                   <select name="column" class="text">
-                     <option value="title">ì ëª©</option>
-                     <option value="content">ë´ì©</option>
-                     <option value="nickname">ìì±ì</option>
+                     <option value="title">제목</option>
+                     <option value="content">내용</option>
+                     <option value="nickname">작성자</option>
                   </select> 
-                  <input type="text" name="word" placeholder="ê²ìì´ë¥¼ ìë ¥íì¸ì." required class="text"> 
+                  <input type="text" name="word" placeholder="검색어를 입력하세요." required class="text"> 
                   <i class="bi bi-search"></i>
                </form>
             </div>
