@@ -29,6 +29,8 @@
 		<put-attribute name="content" value="/WEB-INF/views/calendar/{1}.jsp"></put-attribute> 
 		
 	</definition>
+	<definition name="project.*" template="/WEB-INF/views/project/{1}.jsp">
+	</definition>
 
 </tiles-definitions>
 
