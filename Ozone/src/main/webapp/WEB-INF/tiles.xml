@@ -17,21 +17,35 @@
 		
 	</definition> -->
 	
-	<definition name="calendar.*" template="/WEB-INF/views/calendar/calendar.jsp">
+	<definition name="calendar.*" template="/WEB-INF/views/calendar/base.jsp">
 		
 		<!-- asset -->
-		<!-- <put-attribute name="asset" value="/WEB-INF/views/inc/asset.jsp"></put-attribute> -->
+		<put-attribute name="asset" value="/WEB-INF/views/inc/calendarAsset.jsp"></put-attribute> 
 		
 		<!-- header -->
-		<!-- <put-attribute name="header" value="/WEB-INF/views/inc/header.jsp"></put-attribute> -->
+		<put-attribute name="header" value="/WEB-INF/views/calendar/CalendarHeader.jsp"></put-attribute>
 		
 		<!-- content -->
-		<put-attribute name="content" value="/WEB-INF/views/calendar/{1}.jsp"></put-attribute> 
+		<put-attribute name="content" value="/WEB-INF/views/calendar/{1}.jsp"></put-attribute>
 		
 	</definition>
 	<definition name="project.*" template="/WEB-INF/views/project/{1}.jsp">
 	</definition>
 
+	<definition name="memo.*" template="/WEB-INF/views/calendar/base.jsp">
+		
+		<!-- asset -->
+		<put-attribute name="asset" value="/WEB-INF/views/inc/calendarAsset.jsp"></put-attribute> 
+		
+		<!-- header -->
+		<put-attribute name="header" value="/WEB-INF/views/calendar/CalendarHeader.jsp"></put-attribute>
+		
+		<!-- content -->
+		<put-attribute name="content" value="/WEB-INF/views/memo/{1}.jsp"></put-attribute>
+		
+	</definition>
+	
+	
 </tiles-definitions>
 
 

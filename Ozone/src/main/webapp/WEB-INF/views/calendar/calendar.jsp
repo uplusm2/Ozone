@@ -1,160 +1,103 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-    <link href='/front/HyunWoo/fullcalendar-5.10.2/lib/main.css' rel='stylesheet' />
-    <script src='/front/HyunWoo/fullcalendar-5.10.2/lib/main.js'></script>
-    <title>Document</title>
-    <style>
-        html, body{
-            height : 100%;
-            width : 100%;
-            padding : 0px;
-            margin : 0px;
-            background-color:#F5F8FF ;
-        }
+<style>
 
-        .header{
-            float : left;
-            width : 120px;
-            height : 100%;
-            background-color :  white ;
-            text-align: center;
-        }
+	.content{
+        margin-right : 120px;
+        padding-top: 3%;
+    }
+    .content #calendar{
+        width: 80%;
+        padding-top: 0%;
+        margin-left: 15%;
+        height: 90vh;
+    }
+    .fc-prev-button.fc-button.fc-button-primary{
+        transform: translate(-0vh);
+    }
+    .fc-daygrid-day.fc-day{
+        background-color: white;
+    }
+    .fc-daygrid-day.fc-day.fc-day-today {
+        background-color: #F5F8FF;
+    } 
+    .fc-daygrid-event.fc-daygrid-block-event.fc-h-event{
+        background-color: #F5F8FF;
+        text-align: center;
+        width: 80%;
+        margin-left: 10%;
+        margin-bottom: 5%;
+    }
+    .fc-event-title.fc-sticky{
+        color: rgb(92, 111, 126);
+    }
+    .fc-button.fc-button-primary{
+        background-color: #F5F8FF;
+        color: rgb(92, 111, 126);
+    }
+    .fc-today-button.fc-button.fc-button-primary{
+        background-color: #F5F8FF;
+        color: rgb(92, 111, 126);
+    }
+    .bi.bi-calendar2-event.icon{
+        color: #9bacff;
+    }
 
-        .header .icon{
-            font-size : 30px;
-            color : #C9C9C9;
-            margin-left : 17px;
-            opacity: 0.7;
-            height : 75px;
-            width : 75px;
-            padding-top : 25px;
-            border-bottom : 1px solid white;
-        }
 
-        .icon:hover{
-            opacity: 1;
-            color:#777;
-        }
-        .content{
-            margin-right : 120px;
-            padding-top: 3%;
-        }
-        .content #calendar{
-            width: 80%;
-            padding-top: 3%;
-            margin-left: 15%;
-            height: 97vh;
-        }
-        .fc-prev-button.fc-button.fc-button-primary{
-            transform: translate(-0vh);
-        }
-        .fc-daygrid-day.fc-day{
-            background-color: white;
-        }
-        .fc-daygrid-day.fc-day.fc-day-today {
-            background-color: #F5F8FF;
-        } 
-        .fc-daygrid-event.fc-daygrid-block-event.fc-h-event{
-            background-color: #F5F8FF;
-            text-align: center;
-            width: 80%;
-            margin-left: 10%;
-            margin-bottom: 5%;
-        }
-        .fc-event-title.fc-sticky{
-            color: rgb(92, 111, 126);
-        }
-        .fc-button.fc-button-primary{
-            background-color: #F5F8FF;
-            color: rgb(92, 111, 126);
-        }
-        .fc-today-button.fc-button.fc-button-primary{
-            background-color: #F5F8FF;
-            color: rgb(92, 111, 126);
-        }
-        .bi.bi-calendar2-event.icon{
-            color: #9bacff;
-        }
-    </style>
-</head>
-<body>
-    
-    <div class = "header">
-        <div class="bi bi-list icon" onclick = ""></div>
-        <div class="bi bi-calendar2-event icon" onclick = "http://127.0.0.1:5500/front/HyunWoo/calendar.html"></div>
-        <div class="bi bi-envelope icon" onclick = ""></div>
-        <div class="bi bi-window-sidebar icon" onclick = ""></div>
-        <div class="bi bi-file-earmark-check icon" onclick = ""></div>
-        <div class="bi bi-folder2 icon" onclick = ""></div>
-        <div class="bi bi-card-list icon" onclick = ""></div>
-        <div class="bi bi-person-video2 icon" onclick = ""></div>
-    </div>
-    <div class = "content">
-        <div id="calendar"></div>
-    </div>
+</style>
+
+<div class = "content">
+    <div id="calendar"></div>
+</div>
  
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    
-    <script src="/front/hyunWoo/header/js/bootstrap.min.js"></script>
-
-    <script>
-        $('.fc-button-group').text("<input type='text'>");
-        var today = new Date().toISOString().substring(0,10);
-        document.addEventListener('DOMContentLoaded', function() {
-            var calendarEl = document.getElementById('calendar');
-            var calendar = new FullCalendar.Calendar(calendarEl, {
-                customButtons: {
-                    myCustomButton: {
-                    text: '메모작성',
-                    click: function() {
-                        location.href="http://127.0.0.1:5500/front/HyunWoo/memoAdd.html";
-                    }
-                    }
+<script>
+    $('.fc-button-group').text("<input type='text'>");
+    var today = new Date().toISOString().substring(0,10);
+    document.addEventListener('DOMContentLoaded', function() {
+        var calendarEl = document.getElementById('calendar');
+        var calendar = new FullCalendar.Calendar(calendarEl, {
+            customButtons: {
+                myCustomButton: {
+                text: '메모작성',
+                click: function() {
+                    location.href="/memoadd";
+                }
+                }
+            },
+            headerToolbar: {
+                left: 'prevYear,prev,next,nextYear myCustomButton',
+                center: 'title',
+                right: 'dayGridMonth,dayGridWeek,dayGridDay'
+            },
+            initialDate: today ,
+            navLinks: true, // can click day/week names to navigate views
+            editable: true,
+            dayMaxEvents: true, // allow "more" link when too many events
+            events: [
+                {
+                title: '네이버 로 갈까요?',
+                url: 'http://naver.com',
+                start: '2022-02-14'
                 },
-                headerToolbar: {
-                    left: 'prevYear,prev,next,nextYear myCustomButton',
-                    center: 'title',
-                    right: 'dayGridMonth,dayGridWeek,dayGridDay'
+                {
+                title: 'memo',
+                url: 'http://127.0.0.1:5500/front/HyunWoo/memoList.html',
+                start: '2022-02-14'
                 },
-                initialDate: today ,
-                navLinks: true, // can click day/week names to navigate views
-                editable: true,
-                dayMaxEvents: true, // allow "more" link when too many events
-                events: [
-                    {
-                    title: '네이버 로 갈까요?',
-                    url: 'http://naver.com',
-                    start: '2022-02-14'
-                    },
-                    {
-                    title: 'memo',
-                    url: 'http://127.0.0.1:5500/front/HyunWoo/memoList.html',
-                    start: '2022-02-14'
-                    },
-                    {
-                    title: 'Click for Naver',
-                    url: 'http://naver.com',
-                    start: '2022-02-15'
-                    },
-                    {
-                    title: 'Click for Google',
-                    url: 'http://google.com',
-                    start: '2022-02-15'
-                    }
-                ]
-            });
-            calendar.render();
+                {
+                title: 'Click for Naver',
+                url: 'http://naver.com',
+                start: '2022-02-15'
+                },
+                {
+                title: 'Click for Google',
+                url: 'http://google.com',
+                start: '2022-02-15'
+                }
+            ]
         });
+        calendar.render();
+    });
 
-        $('.fc-daygrid-day-number').append();
-    </script>
-
-</body>
-</html>
+    $('.fc-daygrid-day-number').append();
+</script>
