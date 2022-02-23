@@ -10,7 +10,7 @@
 	<typeAliases>
 		<typeAlias type="com.test.ozone.calendar.CalendarDTO" alias="dto" />
 	</typeAliases>
-	
+
 </configuration>
 
 
