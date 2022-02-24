@@ -69,7 +69,9 @@
 		<put-attribute name="content" value="/WEB-INF/views/mail/{1}.jsp"></put-attribute>
 		
 	</definition>
-	
+	<definition name="box.*" template="/WEB-INF/views/box/{1}.jsp">
+		
+	</definition>
 </tiles-definitions>
 
 
