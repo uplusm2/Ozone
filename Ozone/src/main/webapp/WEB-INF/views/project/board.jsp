@@ -1009,8 +1009,8 @@
             <i class="bi bi-kanban"></i>By Status<i class="bi bi-chevron-down"></i>
          </div>
          <ul class="column-select">
-            <li>By Status</li>
-            <li>All Tasks</li>
+            <li onclick="location.href='/project/column';">By Status</li>
+            <li onclick="location.href='/project/board';">All Tasks</li>
          </ul>
 
          <div class="board">
@@ -1022,7 +1022,7 @@
                   <th>Due Date</th>
                   <th>Status</th>
                </tr>
-               <tr>
+               <tr  onclick="location.href='/project/detail';">
                   <td><span class="priority high">High🔥</span>고구마켓(Servlete+JSP)</td>
                   <td>
                      <img src="<%= root %>/resources/img/KakaoTalk_20220104_002701045.png">

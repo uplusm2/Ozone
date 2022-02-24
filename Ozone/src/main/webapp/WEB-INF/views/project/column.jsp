@@ -540,8 +540,8 @@
             <i class="bi bi-kanban"></i>By Status<i class="bi bi-chevron-down"></i>
          </div>
          <ul class="column-select">
-            <li>By Status</li>
-            <li>All Tasks</li>
+            <li onclick="location.href='/project/column';">By Status</li>
+            <li onclick="location.href='/project/board';">All Tasks</li>
          </ul>
          
          <div class="state no-state">No State</div>
