@@ -672,7 +672,7 @@
 	}
 	.project-board .search i {
 	   position: absolute;
-	   right: 16px;
+	   right: 10px;
 	   top: 4px;
 	   width: 28px;
 	   height: 28px;
