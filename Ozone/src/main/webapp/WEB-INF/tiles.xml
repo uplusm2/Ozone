@@ -29,8 +29,12 @@
 		<put-attribute name="content" value="/WEB-INF/views/calendar/{1}.jsp"></put-attribute>
 		
 	</definition>
-	
-	<definition name="project.*" template="/WEB-INF/views/project/{1}.jsp"/>
+
+	<definition name="project.*" template="/WEB-INF/views/project/{1}.jsp">
+		<!-- asset -->
+		<put-attribute name="asset" value="/WEB-INF/views/inc/calendarAsset.jsp"></put-attribute> 
+	</definition>
+
 
 	<definition name="memo.*" template="/WEB-INF/views/calendar/base.jsp">
 		

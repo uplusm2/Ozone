@@ -21,31 +21,19 @@
    <script src="<%= root %>/resources/js/jquery-ui.js"></script>
    <script src="<%= root %>/resources/js/bootstrap.min.js"></script>
    <style>
-	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Gothic+A1:wght@300;400;500;600;700;800;900&family=Gowun+Dodum&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,700;1,700&family=Jua&family=Nanum+Gothic:wght@700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@400;500;700&family=Rubik&display=swap');
-	
-	/* reset */
-	* {margin: 0; padding: 0;}
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {margin:0; padding:0;}
-	a { color: inherit; text-decoration: none;}
-	li {list-style: none;}
-	address, em, i { font-style: none;}
-	h1, h2, h3, h4, h5, h6 { font-size: inherit; }
-	a:hover {text-decoration: none; color: inherit; }  
-	
-	
-	 /* layout  */
-	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Gothic+A1:wght@300;400;500;600;700;800;900&family=Gowun+Dodum&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,700;1,700&family=Jua&family=Nanum+Gothic:wght@700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@400;500;700&family=Rubik&display=swap');
-	
-	/* reset */
-	* {margin: 0; padding: 0;}
-	html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, tbody, tfoot, thead, tr, th, td {margin:0; padding:0;}
-	a { color: inherit; text-decoration: none;}
-	li {list-style: none;}
-	address, em, i { font-style: none;}
-	h1, h2, h3, h4, h5, h6 { font-size: inherit; }
-	a:hover {text-decoration: none; color: inherit; }  
-	
-	
+	@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
+/* 	body, .wrap, header {
+	   background: #6CA1FD;
+	} */
+	.header div {
+	   animation: header 2s;
+	}
+	@keyframes header {
+	   0% { opacity: 0;}
+	   99% {opacity: 0;}
+	   100% { opacity: 1;}
+	}
+	 
 	 /* layout  */
 	body {
 		/* font-family: 'Noto Sans KR', sans-serif; */
@@ -53,7 +41,7 @@
 		font-size: 18px; 
 		font-weight: 500; 
 	   color: #5C6F7E;
-	   background: #F5F8FF;
+	   background: #6CA1FD;
 	   /* background: #fff; */
 	   z-index: -2;
 	   position: relative;
@@ -69,7 +57,7 @@
 		margin: 60px auto;
 	}
 	.wrap {
-	   background: #F5F8FF;
+	   background: #6CA1FD;;
 	   /* background: #Fff; */
 	   /* width: 100%; */
 	   overflow: hidden;
@@ -87,29 +75,28 @@
 	   float : left;
 	   width : 65px;
 	   height : 100%;
-	   background-color :  #fff ;
+	   background-color :  #6CA1FD; ;
 	   /* background: #F5F8FF; */
 	   text-align: center;
 	   /* padding-top: 20px; */
 	}
 	.header .icon{
 	   font-size : 35px;
-	   color : #C9C9C9;
+	   color : rgba(255, 255, 255, 0.623);
 	   margin-left : -5px;
 	   opacity: 0.6;
 	   height : 75px;
 	   width : 75px;
 	   padding-top : 15px;
 	   margin-bottom: 0px;
-	   border-bottom : 1px solid white;
 	}
 	.header .icon.project {
 	   opacity: 1;
-	   color: #9bacff;
+	   color: #fff;
 	}
 	.icon:hover{
 	  opacity: 1;
-	  color: #9bacff;
+	  color: #fff;
 	}
 	
 	/* header */
@@ -958,11 +945,44 @@
 	   background-color: #fff;
 	   font-weight: 700;
 	}
+	.title {
+	   position: relative;
+	   width: 100%;
+	   height: 100vh;
+	   /* background: #6CA1FD; */
+	   color: rgba(255, 255, 255, 0.884);
+	}
+	.title h1 {
+	   position: absolute;
+	   top: 20vh;
+	   left: 100px;
+	   font-size: 300px;
+	   font-weight: 300;
+	   animation: title 2s;
+	   letter-spacing: 21px;
+	   font-family: 'Ranchers', cursive;
+	}
+	@keyframes title {
+	   0% { opacity: 0; transform: scale(2);}
+	   /* 50% { opacity: 0.4; transform: scale(1.5); } */
+	   100% { opacity: 1; transform: scale(1); }
+	} 
+	.individual-bubble {
+	   width: 200px;
+	   position: absolute;
+	   border-radius: 100%;
+	   /* bottom: 50vh; */
+	   bottom: 52vh;
+	   /* background-color: #fff; */
+	   border: 2px solid rgba(255, 255, 255, 0.623);
+	   z-index: -1;
+	   transform: translateX(-100px) translateY(-10px);
+	}
    </style>
 </head>
 <body>
    <div class = "header">
-      <div class="bi bi-list icon" onclick = ""></div>
+      <div class="bi bi-list icon project" onclick = ""></div>
       <div class="bi bi-calendar2-event icon" onclick = ""></div>
       <div class="bi bi-envelope icon" onclick = ""></div>
       <div class="bi bi-window-sidebar icon" onclick = ""></div>
@@ -972,53 +992,37 @@
       <div class="bi bi-person-video2 icon" onclick = ""></div>
   </div>
    <div class="wrap">
-      <section class="project-detail">
-         <h1>고구마켓</h1>
-         <i class="hover bi bi-three-dots"></i>
-         <i class="update bi bi-eraser"></i>
-         <i class="upte bi bi-trash"></i>
-         <table>
-            <tr>
-               <td><i class="bi bi-people-fill"></i>Member</td>
-               <td><img src="<%= root %>/resources/img/kakao.png">카카오</td>
-               <td><img src="<%= root %>/resources/img/google.png">구글</td>
-               <td><img src="<%= root %>/resources/img/KakaoTalk_20220104_002701045.png">이유미</td>
-               <td><img src="<%= root %>/resources/img/오 현우님.png">황현우</td>
-               <td><img src="<%= root %>/resources/img/터진 헤인님.png">이혜인</td>
-            </tr>
-            <tr>
-               <td><i class="bi bi-caret-down-fill"></i>Status</td>
-               <td colspan="10"><span class="status not-started">Not Started</span></td>
-            </tr>
-            <tr>
-               <td><i class="bi bi-bookmarks"></i>Priority</td>
-               <td colspan="10"><span class="priority middle">Middle</span></td>
-            </tr>
-            <tr>
-               <td><i class="bi bi-clock"></i>Date Created</td>
-               <td colspan="10">Feb 22, 2022 5:30PM</td>
-            </tr>
-            <tr>
-               <td><i class="bi bi-calendar-check"></i>Due Date</td>
-               <td colspan="10">Feb 22, 2022</td>
-            </tr>
-            <tr>
-               <td colspan="10">Description</td>
-            </tr>
-            <tr>
-               <td colspan="10">고구마켓은 Servlet과 JSP로 구현한 중고거래 웹사이트입니다. </td>
-            </tr>
-            <tr>
-               <td colspan="10">To-do</td>
-            </tr>
-            <tr class="to-do">
-               <td colspan="10"><input type="checkbox" name="check1" id="check1"><label for="check1">프론트엔드 꾸미기</label></td>
-            </tr>
-            <tr class="to-do">
-               <td colspan="10"><input type="checkbox" name="check2" id="check2"><label for="check2">백엔드 형상관리 제대로 하기</label></td>
-            </tr>
-         </table>
+      <section class="main">
+         <div class="title bubbles animate">
+            <h1>OZONE</h1>
+         </div>
       </section>
    </div>
 </body>
+<script>
+	jQuery(document).ready(function($) {
+	    var bArray = [];
+	    var sArray = [4,6,8,10,11,12,3,5,20,30];
+	
+	    for (var i = 0; i < $('.bubbles').width()+200; i++) {
+	       bArray.push(i);
+	    }
+	
+	    function randomValue(arr) {
+	       return arr[Math.floor(Math.random() * arr.length)];
+	    }
+	
+	    setInterval(function(){
+	       var size = randomValue(sArray);
+	       $('.bubbles').append('<div class="individual-bubble" style="left: ' + randomValue(bArray) + 'px; width: ' + size + 'px; height:' + size + 'px;"></div>');
+	       $('.individual-bubble').animate({
+	          'bottom': '110%',
+	          'opacity' : '-=1'
+	       }, 2700, function(){
+	          $(this).remove()
+	       }
+	       );
+	    }, 100);
+	 });
+</script>
 </html>
