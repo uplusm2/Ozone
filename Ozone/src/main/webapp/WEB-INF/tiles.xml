@@ -72,6 +72,11 @@
 	<definition name="box.*" template="/WEB-INF/views/box/{1}.jsp">
 		
 	</definition>
+	
+	<definition name="file.*" template="/WEB-INF/views/file/{1}.jsp"/>
+	
+	
+	
 </tiles-definitions>
 
 
