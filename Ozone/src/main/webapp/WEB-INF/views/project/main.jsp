@@ -26,7 +26,7 @@
 	   background: #6CA1FD;
 	} */
 	.header div {
-	   animation: header 2s;
+	   animation: header 3s;
 	}
 	@keyframes header {
 	   0% { opacity: 0;}
@@ -958,9 +958,10 @@
 	   left: 100px;
 	   font-size: 300px;
 	   font-weight: 300;
-	   animation: title 2s;
+	   animation: title 3s;
 	   letter-spacing: 21px;
 	   font-family: 'Ranchers', cursive;
+	   text-shadow: 3px 3px 3px rgba(0, 0, 0, 0.13);
 	}
 	@keyframes title {
 	   0% { opacity: 0; transform: scale(2);}
@@ -977,6 +978,7 @@
 	   border: 2px solid rgba(255, 255, 255, 0.623);
 	   z-index: -1;
 	   transform: translateX(-100px) translateY(-10px);
+	   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.13);
 	}
    </style>
 </head>
