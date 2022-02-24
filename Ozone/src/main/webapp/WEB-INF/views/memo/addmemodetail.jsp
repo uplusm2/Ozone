@@ -55,21 +55,28 @@
     .table-bordered tr:nth-child(4) input{
         height: 350px;
     }
+    .btn.btn-default{
+    	position: relative;
+    	left: 7%;
+    }
+    .btn.btn-info.addok{
+    	position: relative;
+    	left: 15%;
+    }
 </style>
 
     <div class = "content">
         
         <div class="list">
-            <input type="button" value="개인 일정" class="btn btn-default" onclick="location.href='/calendar';">
-            <input type="button" value="메모 작성" class="btn btn-default">
-            <input type="button" value="메모 리스트" class="btn btn-default" onclick="location.href='memolist';">
+            <input type="button" value="개인 일정" class="btn btn-default" onclick="location.href='/addcalendar';">
+            <input type="button" value="메모 리스트" class="btn btn-default" onclick="location.href='/addmemolist';">
             
             <hr>
 
             <table  class="table-bordered">
                 <tr>
                     <th>제목</th>
-                    <td>제목을 입력해 주세요.</td>
+                    <td>가나다</td>
                 </tr>
                 <tr>
                     <th>참조인</th>
@@ -81,11 +88,12 @@
                 </tr>
                 <tr>
                     <th>내용</th>
-                    <td>내용을 입력해 주세요.</td>
+                    <td>모두 모이세요!!</td>
                 </tr>
             </table>
         </div>
     </div>
+    
     
 <script type="text/javascript">
 	$('.btn.btn-info.location').click(()=>{

@@ -61,12 +61,12 @@
                 text: '메모작성',
                 click: function() {
                     location.href="/memoadd";
-                	}
+                }
                 },
                 myCustomButton2: {
                     text: '메모 리스트',
                     click: function() {
-                        location.href="/memolist";
+                        location.href="/addmemolist";
                     	}
                     }
             },
@@ -87,7 +87,7 @@
                 },
                 {
                 title: 'memo',
-                url: 'http://127.0.0.1:5500/front/HyunWoo/memoList.html',
+                url: '/memodetail',
                 start: '2022-02-14'
                 },
                 {
@@ -99,6 +99,11 @@
                 title: 'Click for Google',
                 url: 'http://google.com',
                 start: '2022-02-15'
+                },
+                {
+                  title: '가나다',
+                  url: '/addmemodetail',
+                  start: '2022-02-26'
                 }
             ]
         });

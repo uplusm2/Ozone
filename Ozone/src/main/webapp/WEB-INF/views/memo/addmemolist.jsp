@@ -44,9 +44,8 @@
         <div class="list">
             <table class="table table-hover">
                 <tr>
-                    <input type="button" value="개인 일정" class="btn btn-default" onclick="location.href='/calendar';">
+                    <input type="button" value="개인 일정" class="btn btn-default" onclick="location.href='/addcalendar';">
                     <input type="button" value="메모 작성" class="btn btn-default" onclick="location.href='/memoadd';">
-                    <input type="button" value="메모 리스트" class="btn btn-default" onclick="location.href='/memolist';">
                     <span class="btn btn-default search"> <input type="text" name="search"> <input type="button" value="🍳"></span>
                 </tr>
                 <tr>
@@ -56,50 +55,57 @@
                     <th>날짜</th>
                     <th>작성자</th>
                 </tr>
-                <tr onclick="location.href='/memodetail'">
-                    <td>1</td>
-                    <td>제목입니다.</td>
-                    <td>내용입니다.</td>
-                    <td>2022-02-16</td>
+                <tr onclick="location.href='/addmemodetail'">
+                    <td>9</td>
+                    <td>가나다</td>
+                    <td>모두 모이세요!!</td>
+                    <td>2022-02-26</td>
                     <td>황현우</td>
                 </tr>
                 <tr onclick="location.href='/memodetail'">
-                    <td>1</td>
+                    <td>8</td>
                     <td>제목입니다.</td>
                     <td>내용입니다.</td>
                     <td>2022-02-16</td>
                     <td>황현우</td>
                 </tr>
                 <tr onclick="location.href='/memodetail'">
-                    <td>1</td>
+                    <td>7</td>
+                    <td>제목입니다.</td>
+                    <td>내용입니다.</td>
+                    <td>2022-02-16</td>
+                    <td>황현우</td>
+                </tr>
+                <tr onclick="location.href='/memodetail'">
+                    <td>6</td>
                     <td>제목입니다.</td>
                     <td>내용입니다.</td>
                     <td>2022-02-16</td>
                     <td>황현우</td>
                 </tr>
                 <tr>
-                    <td>1</td>
+                    <td>5</td>
                     <td>제목입니다.</td>
                     <td>내용입니다.</td>
                     <td>2022-02-16</td>
                     <td>황현우</td>
                 </tr>
                 <tr>
-                    <td>1</td>
+                    <td>4</td>
                     <td>제목입니다.</td>
                     <td>내용입니다.</td>
                     <td>2022-02-16</td>
                     <td>황현우</td>
                 </tr>
                 <tr>
-                    <td>1</td>
+                    <td>3</td>
                     <td>제목입니다.</td>
                     <td>내용입니다.</td>
                     <td>2022-02-16</td>
                     <td>황현우</td>
                 </tr>
                 <tr>
-                    <td>1</td>
+                    <td>2</td>
                     <td>제목입니다.</td>
                     <td>내용입니다.</td>
                     <td>2022-02-16</td>
