@@ -950,7 +950,7 @@
 	   width: 100%;
 	   height: 100vh;
 	   /* background: #6CA1FD; */
-	   color: rgba(255, 255, 255, 0.884);
+	   color: #ffffffe0;
 	}
 	.title h1 {
 	   position: absolute;
@@ -974,8 +974,8 @@
 	   border-radius: 100%;
 	   /* bottom: 50vh; */
 	   bottom: 52vh;
-	   /* background-color: #fff; */
-	   border: 2px solid rgba(255, 255, 255, 0.623);
+	   background-color: #ffffff67;
+	   border: 2px solid #ffffff75;
 	   z-index: -1;
 	   transform: translateX(-100px) translateY(-10px);
 	   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.13);
@@ -1000,11 +1000,13 @@
          </div>
       </section>
    </div>
+   <div class="">
+   </div>
 </body>
 <script>
 	jQuery(document).ready(function($) {
 	    var bArray = [];
-	    var sArray = [4,6,8,10,11,12,3,5,20,30];
+	    var sArray = [4,6,8,10,11,12,14,6,7,10,5,20,30];
 	
 	    for (var i = 0; i < $('.bubbles').width()+200; i++) {
 	       bArray.push(i);
