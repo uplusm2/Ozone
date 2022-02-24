@@ -63,7 +63,7 @@
 		<put-attribute name="mailHeader" value="/WEB-INF/views/inc/mailHeader.jsp"></put-attribute>
 		
 		<!-- sidebar -->
-		<put-attribute name="header" value="/WEB-INF/views/inc/mailSidebar.jsp"></put-attribute>
+		<put-attribute name="mailSidebar" value="/WEB-INF/views/inc/mailSidebar.jsp"></put-attribute>
 		
 		<!-- content -->
 		<put-attribute name="content" value="/WEB-INF/views/mail/{1}.jsp"></put-attribute>
