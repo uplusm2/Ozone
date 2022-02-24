@@ -78,5 +78,13 @@ public class MemoController {
 		return "map.addlocation";
 	}
 	
+	@GetMapping("/location")
+	public String location(HttpServletRequest req, HttpSession session, HttpServletResponse resp, Model model) {
+		
+		
+		
+		return "map.location";
+	}
+	
 	
 }

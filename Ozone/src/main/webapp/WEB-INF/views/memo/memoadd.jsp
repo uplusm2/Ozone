@@ -79,7 +79,7 @@
 	        <table  class="table-bordered">
 	            <tr>
 	                <th>제목</th>
-	                <td><input type="text" class="form-control" placeholder="제목을 입력해 주세요."></td>
+	                <td><input type="text" class="form-control" placeholder="제목을 입력해 주세요. 예 ) 가나다"></td>
 	            </tr>
 	            <tr>
 	                <th>참조인</th>
@@ -91,7 +91,7 @@
 	            </tr>
 	            <tr>
 	                <th>내용</th>
-	                <td><input type="text" class="form-control" placeholder="내용을 입력해 주세요."></td>
+	                <td><input type="text" class="form-control" placeholder="내용을 입력해 주세요. 예 ) 모두 모이세요!!"></td>
 	            </tr>
 	        </table>
 	    </div>

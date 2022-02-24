@@ -84,7 +84,7 @@
                 </tr>
                 <tr>
                     <th>Meeting 지역</th>
-                    <td><input type="button" value="Meeting 지역" class="btn btn-info"></td>
+                    <td><input type="button" value="Meeting 지역" class="btn btn-info location"></td>
                 </tr>
                 <tr>
                     <th>내용</th>
@@ -93,3 +93,13 @@
             </table>
         </div>
     </div>
+    
+    
+<script type="text/javascript">
+	$('.btn.btn-info.location').click(()=>{
+		var xPos = (document.body.offsetWidth/2) - (1200/2); // 가운데 정렬
+		xPos += window.screenLeft; // 듀얼 모니터일 때
+		var yPos = (document.body.offsetHeight/2) - (1200/2);
+		window.open('/location','window','width=500,height=500,left='+xPos+',top='+yPos);
+	});
+</script>

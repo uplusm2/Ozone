@@ -45,7 +45,7 @@
 		
 	</definition>
 	
-	<definition name="map.*" template="/WEB-INF/views/memo/addlocation.jsp"/>
+	<definition name="map.*" template="/WEB-INF/views/memo/{1}.jsp"/>
 	
 	
 </tiles-definitions>
