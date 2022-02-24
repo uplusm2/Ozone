@@ -20,6 +20,8 @@
    <script src="<%= root %>/resources/js/jquery-1.12.4.min.js"></script>
    <script src="<%= root %>/resources/js/jquery-ui.js"></script>
    <script src="<%= root %>/resources/js/bootstrap.min.js"></script>
+   
+</head>
    <style>
 	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Gothic+A1:wght@300;400;500;600;700;800;900&family=Gowun+Dodum&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,700;1,700&family=Jua&family=Nanum+Gothic:wght@700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@400;500;700&family=Rubik&display=swap');
 	
@@ -193,7 +195,6 @@
 	
 	/* 프로젝트 칼럼 */
 	.project-column {
-	   /* background: #fff; */
 	   color: #5C6F7E;
 	   font-family: 'IBM Plex Sans KR', sans-serif;
 	   width: 1300px;
@@ -205,6 +206,30 @@
 	   z-index: -2;
 	   position: relative;
 	   /* left: 0; */
+	   font-weight: 700;
+	}
+	.project-column i {
+	   margin-right: 5px;
+	   margin-left: 5px;
+	}
+	.project-column i.bi-chevron-down {
+	   font-size: 12px;
+	}
+	.column-select {
+	   font-weight: 500;
+	   position: absolute;
+	   left: 90px;
+	   background: #fff;
+	   font-size: 15px;
+	   width: 120px;
+	   text-align: center;
+	   border-radius: 5px;
+	   z-index: 1;
+	   border: 1px solid #
+	}
+	.column-select li {
+	   margin: 3px;
+	   cursor: pointer;
 	}
 	.project-column img {
 	   width: 30px;
@@ -215,6 +240,7 @@
 	.project-select {
 	   margin: 10px 55px;
 	   font-size: 18px;
+	   cursor: pointer;
 	}
 	.project-select select{
 	   position: relative;
@@ -497,8 +523,6 @@
 	   font-weight: 700;
 	}
    </style>
-   
-</head>
 <body>
    <div class = "header">
       <div class="bi bi-list icon" onclick = ""></div>
@@ -512,13 +536,13 @@
    </div>
    <div class="wrap">
       <section class="project-column">
-         <div class="project-select">
-            <i class="bi bi-kanban"></i>
-            <select name="view" id="view">
-               <option value="status">By Status</option>
-               <option value="all">All Tasks</option>
-            </select>
+          <div class="project-select">
+            <i class="bi bi-kanban"></i>By Status<i class="bi bi-chevron-down"></i>
          </div>
+         <ul class="column-select">
+            <li>By Status</li>
+            <li>All Tasks</li>
+         </ul>
          
          <div class="state no-state">No State</div>
          <div class="state not-started">Not Started</div>
@@ -636,6 +660,12 @@
       });
       $( ".column .project" ).disableSelection();
    });
+	$(function() {
+		$(".column-select").hide();
+		$(".project-select").click(function() {
+			$(".column-select").slideToggle(200);
+		});
+	});
 
    var calendar;
    document.addEventListener('DOMContentLoaded', function() {

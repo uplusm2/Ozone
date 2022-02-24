@@ -6,6 +6,12 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class ProjectController {
 	
+	@GetMapping("/ozone")
+	public String main() {
+		
+		return "project.main";
+	}
+	
 	@GetMapping("/project/column")
 	public String column() {
 		

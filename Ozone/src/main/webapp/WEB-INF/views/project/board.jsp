@@ -206,7 +206,6 @@
 	
 	/* 프로젝트 칼럼 */
 	.project-column {
-	   /* background: #fff; */
 	   color: #5C6F7E;
 	   font-family: 'IBM Plex Sans KR', sans-serif;
 	   width: 1300px;
@@ -218,6 +217,29 @@
 	   z-index: -2;
 	   position: relative;
 	   /* left: 0; */
+	   font-weight: 700;
+	}
+	.project-column i {
+	   margin-right: 5px;
+	   margin-left: 5px;
+	}
+	.project-column i.bi-chevron-down {
+	   font-size: 12px;
+	}
+	.column-select {
+	   font-weight: 500;
+	   position: absolute;
+	   left: 90px;
+	   background: #fff;
+	   font-size: 15px;
+	   width: 120px;
+	   text-align: center;
+	   border-radius: 5px;
+	   z-index: 1;
+	}
+	.column-select li {
+	   margin: 3px;
+	   cursor: pointer;
 	}
 	.project-column img {
 	   width: 30px;
@@ -228,6 +250,7 @@
 	.project-select {
 	   margin: 10px 55px;
 	   font-size: 18px;
+	   cursor: pointer;
 	}
 	.project-select select{
 	   position: relative;
@@ -412,8 +435,6 @@
 	
 	/* project-board select */
 	.project-board {
-	   background: #F5F8FF;
-	   /* background: #fff; */
 	   color: #5C6F7E;
 	   font-family: 'IBM Plex Sans KR', sans-serif;
 	   width: 1300px;
@@ -422,6 +443,17 @@
 	   border-radius: 10px;
 	   /* margin-top: 100px; */
 	   padding: 40px 20px 0px 30px;
+	   z-index: -2;
+	   position: relative;
+	   /* left: 0; */
+	   font-weight: 700;
+	}
+	.project-board i {
+	   margin-right: 5px;
+	   margin-left: 5px;
+	}
+	.project-board i.bi-chevron-down {
+	   font-size: 12px;
 	}
 	.project-board img {
 	   width: 30px;
@@ -974,12 +1006,12 @@
    <div class="wrap">
       <section class="project-board">
          <div class="project-select">
-            <i class="bi bi-kanban"></i>
-            <select name="view" id="view">
-               <option value="all">All Tasks</option>
-               <option value="status">By Status</option>
-            </select>
+            <i class="bi bi-kanban"></i>By Status<i class="bi bi-chevron-down"></i>
          </div>
+         <ul class="column-select">
+            <li>By Status</li>
+            <li>All Tasks</li>
+         </ul>
 
          <div class="board">
             <table>
@@ -993,10 +1025,10 @@
                <tr>
                   <td><span class="priority high">High🔥</span>고구마켓(Servlete+JSP)</td>
                   <td>
-                     <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/오 현우님.png">
-                     <img src="img/오 혜인님.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220104_002701045.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220205_020132636.jpg">
+                     <img src="<%= root %>/resources/img/오 현우님.png">
+                     <img src="<%= root %>/resources/img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
@@ -1005,10 +1037,10 @@
                <tr>
                   <td><span class="priority low">Low</span>고구마켓(Servlete+JSP)</td>
                   <td>
-                     <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/오 현우님.png">
-                     <img src="img/오 혜인님.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220104_002701045.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220205_020132636.jpg">
+                     <img src="<%= root %>/resources/img/오 현우님.png">
+                     <img src="<%= root %>/resources/img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
@@ -1017,10 +1049,10 @@
                <tr>
                   <td><span class="priority low">Low</span>고구마켓(Servlete+JSP)</td>
                   <td>
-                     <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/오 현우님.png">
-                     <img src="img/오 혜인님.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220104_002701045.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220205_020132636.jpg">
+                     <img src="<%= root %>/resources/img/오 현우님.png">
+                     <img src="<%= root %>/resources/img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
@@ -1029,10 +1061,10 @@
                <tr>
                   <td><span class="priority middle">Middle</span>고구마켓(Servlete+JSP)</td>
                   <td>
-                     <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/오 현우님.png">
-                     <img src="img/오 혜인님.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220104_002701045.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220205_020132636.jpg">
+                     <img src="<%= root %>/resources/img/오 현우님.png">
+                     <img src="<%= root %>/resources/img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
@@ -1041,10 +1073,10 @@
                <tr>
                   <td><span class="priority high">High🔥</span>고구마켓(Servlete+JSP)</td>
                   <td>
-                     <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/오 현우님.png">
-                     <img src="img/오 혜인님.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220104_002701045.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220205_020132636.jpg">
+                     <img src="<%= root %>/resources/img/오 현우님.png">
+                     <img src="<%= root %>/resources/img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
@@ -1053,10 +1085,10 @@
                <tr>
                   <td><span class="priority high">High🔥</span>고구마켓(Servlete+JSP)</td>
                   <td>
-                     <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/오 현우님.png">
-                     <img src="img/오 혜인님.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220104_002701045.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220205_020132636.jpg">
+                     <img src="<%= root %>/resources/img/오 현우님.png">
+                     <img src="<%= root %>/resources/img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
@@ -1065,10 +1097,10 @@
                <tr>
                   <td><span class="priority middle">Middle</span>고구마켓(Servlete+JSP)</td>
                   <td>
-                     <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/오 현우님.png">
-                     <img src="img/오 혜인님.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220104_002701045.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220205_020132636.jpg">
+                     <img src="<%= root %>/resources/img/오 현우님.png">
+                     <img src="<%= root %>/resources/img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
@@ -1077,10 +1109,10 @@
                <tr>
                   <td><span class="priority low">Low</span>고구마켓(Servlete+JSP)</td>
                   <td>
-                     <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/오 현우님.png">
-                     <img src="img/오 혜인님.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220104_002701045.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220205_020132636.jpg">
+                     <img src="<%= root %>/resources/img/오 현우님.png">
+                     <img src="<%= root %>/resources/img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
@@ -1089,10 +1121,10 @@
                <tr>
                   <td><span class="priority high">High🔥</span>고구마켓(Servlete+JSP)</td>
                   <td>
-                     <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/오 현우님.png">
-                     <img src="img/오 혜인님.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220104_002701045.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220205_020132636.jpg">
+                     <img src="<%= root %>/resources/img/오 현우님.png">
+                     <img src="<%= root %>/resources/img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
@@ -1101,10 +1133,10 @@
                <tr>
                   <td><span class="priority middle">Middle</span>고구마켓(Servlete+JSP)</td>
                   <td>
-                     <img src="img/KakaoTalk_20220104_002701045.png">
-                     <img src="img/KakaoTalk_20220205_020132636.jpg">
-                     <img src="img/오 현우님.png">
-                     <img src="img/오 혜인님.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220104_002701045.png">
+                     <img src="<%= root %>/resources/img/KakaoTalk_20220205_020132636.jpg">
+                     <img src="<%= root %>/resources/img/오 현우님.png">
+                     <img src="<%= root %>/resources/img/오 혜인님.png">
                   </th>
                   <td>Feb 16, 2022</td>
                   <td>Feb 22, 2022</td>
@@ -1245,6 +1277,12 @@
       });
       calendar.render();
    });
+	$(function() {
+		$(".column-select").hide();
+		$(".project-select").click(function() {
+			$(".column-select").slideToggle(200);
+		});
+	});
 
    var calHeight = 370;
    $('#calendar').fullCalendar({
