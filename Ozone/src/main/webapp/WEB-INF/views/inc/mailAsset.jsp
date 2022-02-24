@@ -5,6 +5,7 @@
 %>
 
 <link rel="stylesheet" href="<%= root %>/resources/css/bootstrap.css">
+<link rel="stylesheet" href="<%= root %>/resources/css/mail.css">
 <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
 
 <script src="<%= root %>/resources/js/jquery-1.12.4.js"></script>
