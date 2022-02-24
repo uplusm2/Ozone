@@ -51,6 +51,7 @@
 	
 	<definition name="map.*" template="/WEB-INF/views/memo/{1}.jsp"/>
 	
+	<definition name="file.*" template="/WEB-INF/views/file/{1}.jsp"/>
 	
 </tiles-definitions>
 

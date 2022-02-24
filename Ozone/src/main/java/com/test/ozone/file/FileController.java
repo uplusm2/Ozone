@@ -1,4 +1,4 @@
-package com.test.file;
+package com.test.ozone.file;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -31,15 +31,15 @@ public class FileController {
 	@Autowired 
 	private ServletContext context;
 	
-	@RequestMapping(value = "/add.do", method = { RequestMethod.GET })
+	@RequestMapping(value = "/file/add.do", method = { RequestMethod.GET })
 	public String add(HttpServletRequest req, HttpServletResponse resp, HttpSession session) {
 
 		
 
-		return "add";
+		return "file.add";
 	}
 	
-	@RequestMapping(value = "/addok.do", method = { RequestMethod.POST })
+	@RequestMapping(value = "/file/addok.do", method = { RequestMethod.POST })
 	public void addok(HttpServletRequest req, HttpServletResponse resp, HttpSession session, BoardDTO dto) {
 
 		//enctype="multipart/form-data" > MultipartHttpServletRequest
@@ -117,29 +117,29 @@ public class FileController {
 		
 	}
 
-	@RequestMapping(value = "/list.do", method = { RequestMethod.GET })
+	@RequestMapping(value = "/file/list.do", method = { RequestMethod.GET })
 	public String list(HttpServletRequest req, HttpServletResponse resp, HttpSession session) {
 
 		List<BoardDTO> list = dao.list();
 		
 		req.setAttribute("list", list);
 
-		return "list";
+		return "file.list";
 	}
 	
 	
-	@RequestMapping(value = "/rlist.do", method = { RequestMethod.GET })
+	@RequestMapping(value = "/file/rlist.do", method = { RequestMethod.GET })
 	public String rlist(HttpServletRequest req, HttpServletResponse resp, HttpSession session) {
 
 		List<BoardDTO> rlist = dao.list();
 		
 		req.setAttribute("rlist", rlist);
 
-		return "rlist";
+		return "file.rlist";
 	}
 	
 	
-	@RequestMapping(value = "/download.do", method = { RequestMethod.GET })
+	@RequestMapping(value = "/file/download.do", method = { RequestMethod.GET })
 	public void download(HttpServletRequest req, HttpServletResponse resp, HttpSession session) throws Exception {
 
 		String fileName = req.getParameter("filename");
@@ -191,16 +191,16 @@ public class FileController {
 	
 	
 	
-	@RequestMapping(value = "/madd.do", method = { RequestMethod.GET })
+	@RequestMapping(value = "/file/madd.do", method = { RequestMethod.GET })
 	public String madd(HttpServletRequest req, HttpServletResponse resp, HttpSession session) {
 
 		
 
-		return "madd";
+		return "file.madd";
 	}
 	
 	
-	@RequestMapping(value = "/maddok.do", method = { RequestMethod.POST })
+	@RequestMapping(value = "/file/maddok.do", method = { RequestMethod.POST })
 	public void maddok(HttpServletRequest req, HttpServletResponse resp, HttpSession session, MBoardDTO dto) {
 		
 		MultipartHttpServletRequest multi = (MultipartHttpServletRequest)req;
@@ -270,7 +270,7 @@ public class FileController {
 	
 	//Mapped Statements collection already contains value for file.list
 	
-	@RequestMapping(value = "/mlist.do", method = { RequestMethod.GET })
+	@RequestMapping(value = "/file/mlist.do", method = { RequestMethod.GET })
 	public String mlist(HttpServletRequest req, HttpServletResponse resp, HttpSession session) {
 
 		List<MBoardDTO> list = dao.mlist();
@@ -284,7 +284,7 @@ public class FileController {
 		
 		req.setAttribute("list", list);
 
-		return "mlist";
+		return "file.mlist";
 	}
 	
 	

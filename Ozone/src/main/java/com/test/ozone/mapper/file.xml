@@ -5,16 +5,16 @@
 	
 
 	
-	<insert id="add" parameterType="com.test.file.BoardDTO">
+	<insert id="add" parameterType="com.test.ozone.file.BoardDTO">
 		insert into tblTeamBoard (boardseq, senduserseq, receiveuserseq, boardtitle, boardcontent, ofilename, filename, delyn, regdate)
 			values (TeamBoard_seq.nextVal, 1, 4, #{boardtitle}, #{boardcontent}, #{ofilename}, #{filename}, default, default)
 	</insert>
 	
-	<select id="list" resultType="com.test.file.BoardDTO">
+	<select id="list" resultType="com.test.ozone.file.BoardDTO">
 		SELECT * FROM tblteamboard t INNER JOIN tbluserinfo i ON t.senduserseq = i.seq WHERE i.name = '테스터1' order by t.boardseq desc
 	</select>
 	
-	<select id="rlist" resultType="com.test.file.BoardDTO">
+	<select id="rlist" resultType="com.test.ozone.file.BoardDTO">
 		SELECT * FROM tblteamboard t INNER JOIN tbluserinfo i ON t.receiveuserseq = i.seq WHERE i.name = '테스터1' order by t.boardseq desc
 	</select>
 	
