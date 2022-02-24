@@ -9,7 +9,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>메일</title>
     <tiles:insertAttribute name="asset"></tiles:insertAttribute>    
-    <!-- <link href="css/inmail.css" rel="stylesheet"> -->
     <style>
         html,
         body {
@@ -76,23 +75,43 @@
         	<tiles:insertAttribute name="content"></tiles:insertAttribute>            
         </section>
     </main>
+    
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script>
-
-        $('#searchDetail').hide();
-
-        $(function () {
-            $('[data-toggle="tooltip"]').tooltip()
-        })
-
-        $(function () {
-            $('.btn-search-detail')
-        })
-        $('.btn-search-detail').click(function () {
-            $('#searchDetail').slideToggle(250);
+	<script>
+	
+	    $('#searchDetail').hide();
+	
+	    $(function () {
+	        $('[data-toggle="tooltip"]').tooltip()
+	    })
+	
+	    $(function () {
+	        $('.btn-search-detail')
+	    })
+	    $('.btn-search-detail').click(function () {
+	        $('#searchDetail').slideToggle(250);
+	    });
+	    
+        $('.summernote').summernote({
+            height: 230,
+            innerWidth: 100,
+            outerWidth: 50,
+            lang: "ko-KR"
         });
-    </script>
+        
+        var cbAll = document.all.cbAll;
+        var cb = document.all.cb; //배열
+
+        cbAll.onchange = m3;
+
+        function m3() {
+
+           for (var i=0; i<cb.length; i++) {
+              cb[i].checked = cbAll.checked;
+           }
+
+        }
+
+	</script>
 </body>
 </html>

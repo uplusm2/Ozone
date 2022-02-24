@@ -3,12 +3,12 @@
 
 <nav class="content-sidebar">
     <div class="sidebar-btn">
-        <input class="btn btn-primary" type="button" value="메일쓰기">
+        <input class="btn btn-primary" type="button" value="메일쓰기" onclick="location.href='/mail/sendmail';">
         <input class="btn btn-default" type="button" value="내게쓰기">
     </div>
     <ul class="sidebar-menu">
         <li onclick="">전체메일함</li>
-        <li onclick="">받은메일함 <span class="badge">4</span></li>
+        <li onclick="location.href='/mail/inmail'">받은메일함 <span class="badge">4</span></li>
         <li onclick="">보낸메일함</li>
         <li onclick="">내게쓴메일함</li>
         <li onclick="">휴지통</li>

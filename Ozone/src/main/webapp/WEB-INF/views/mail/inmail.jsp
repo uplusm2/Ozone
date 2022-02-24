@@ -46,81 +46,81 @@
         <td><input type="checkbox" name="cb"></td>
         <td><i class="bi bi-star"></i></td>
         <td><i class="bi bi-envelope"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 삼겹살 먹고싶다.</td>
-        <td>22.02.14 22:36</td>
+        <td style="color:cornflowerblue">황현우</td>
+        <td style="color:cornflowerblue">업무 관련 요청 파일 드립니다.</td>
+        <td>09:22</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="cb"></td>
+        <td><i class="bi bi-star"></i></td>
+        <td><i class="bi bi-envelope"></i></td>
+        <td style="color:cornflowerblue">주하성</td>
+        <td style="color:cornflowerblue">발표 관련 자료 보내드립니다</td>
+        <td>09:05</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="cb"></td>
+        <td><i class="bi bi-star"></i></td>
+        <td><i class="bi bi-envelope"></i></td>
+        <td style="color:cornflowerblue">이유미</td>
+        <td style="color:cornflowerblue">안녕하세요 이유미입니다</td>
+        <td>08:45</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="cb"></td>
+        <td><i class="bi bi-star"></i></td>
+        <td><i class="bi bi-envelope"></i></td>
+        <td style="color:cornflowerblue">송준영</td>
+        <td style="color:cornflowerblue">인재 추천 리스트 드립니다</td>
+        <td>22.02.24 22:36</td>
+    </tr>
+    <tr>
+        <td><input type="checkbox" name="cb"></td>
+        <td><i class="bi bi-star"></i></td>
+        <td><i class="bi bi-envelope-open"></i></td>
+        <td>이찬우</td>
+        <td>점심 햄버거 어떠세요</td>
+        <td>22.02.24 11:36</td>
     </tr>
     <tr>
         <td><input type="checkbox" name="cb"></td>
         <td><i class="bi bi-star-fill"></i></td>
-        <td><i class="bi bi-envelope"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 짬뽕먹고싶다.</td>
-        <td>22.02.14 22:36</td>
+        <td><i class="bi bi-envelope-open"></i></td>
+        <td>잘레시안</td>
+        <td>우리는 모두 인재입니다</td>
+        <td>22.02.24 10:27</td>
     </tr>
     <tr>
         <td><input type="checkbox" name="cb"></td>
         <td><i class="bi bi-star"></i></td>
         <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>연어초밥 먹고싶다.</td>
-        <td>22.02.14 22:36</td>
+        <td>Kakao</td>
+        <td>카카오 유료서비스 이용약관 변경 안내</td>
+        <td>22.02.23 14:24</td>
     </tr>
     <tr>
         <td><input type="checkbox" name="cb"></td>
         <td><i class="bi bi-star"></i></td>
         <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
+        <td>서룡</td>
+        <td>입과 몸을 이롭게 하는 진정한 웰빙 중화요리 서룡</td>
+        <td>22.02.23 13:54</td>
     </tr>
     <tr>
         <td><input type="checkbox" name="cb"></td>
         <td><i class="bi bi-star"></i></td>
         <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
+        <td>국세청</td>
+        <td>국세청 뉴스레터 941호</td>
+        <td>22.02.23 10:11</td>
     </tr>
     <tr>
         <td><input type="checkbox" name="cb"></td>
         <td><i class="bi bi-star"></i></td>
         <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star"></i></td>
-        <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star"></i></td>
-        <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star"></i></td>
-        <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star"></i></td>
-        <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
+        <td>이혜인</td>
+        <td>모두 수고 많으셨습니다^^</td>
+        <td>22.02.22 21:11</td>
     </tr>
 </table>
 

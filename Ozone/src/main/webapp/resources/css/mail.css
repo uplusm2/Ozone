@@ -23,6 +23,10 @@
     font-size: 3rem;
 }
 
+.content-title h1:hover {
+	cursor: pointer;
+}
+
 /*  Mail Sidebar */
 .content-sidebar {
     border-right: 1px solid #AAA;
@@ -203,8 +207,32 @@
     color: #666;
 }
 
+.mail-list td:nth-child(4):hover,
+.mail-list td:nth-child(5):hover {
+	cursor: pointer;
+}
 /* Mail Pagination */
 .mail-pagination {
     width: 450px;
     margin: 0 auto;
+}
+
+/* Send Mail */
+.send-mail label {
+    width: 100px;
+    padding-bottom: 8px;
+    color: #333;
+    font-weight: 400;
+}
+
+.send-mail input {
+    display: inline;
+    width: 945px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.send-mail .btn-send {
+    width: 80px;
+    margin-left: 0px;
 }
