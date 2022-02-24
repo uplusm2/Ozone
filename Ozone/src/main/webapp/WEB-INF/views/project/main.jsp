@@ -22,11 +22,11 @@
    <script src="<%= root %>/resources/js/bootstrap.min.js"></script>
    <style>
 	@import url('https://fonts.googleapis.com/css2?family=Ranchers&display=swap');
-	.icon {
-	   animation: header 3s;
+	.icon {/* 
+	   animation: header 3s; */
 	}
-	.header {
-	   animation: move 3s;
+	.header {/* 
+	   animation: move 3s; */
 	}
 	@keyframes header {
 	   0% { opacity: 0;}
@@ -91,7 +91,7 @@
 		position: absolute;
 		left: 20px;
 	   font-size : 35px;
-	   color : rgba(255, 255, 255, 0.623);
+	   color : #DFDFDF;
 	   margin-left : -5px;
 	   opacity: 0.6;
 	   height : 75px;
@@ -122,11 +122,11 @@
 	}
 	.icon.project {
 	   opacity: 1;
-	   color: #fff;
+	   color: #9BACFF;
 	}
 	.icon:hover{
 	  opacity: 1;
-	  color: #fff;
+	  color: #9BACFF;
 	}
 	
 	/* header */
@@ -258,14 +258,16 @@
 	.wave {
 	  opacity: .6;
 	  position: absolute;
-	  bottom: 4%;
-	  left: -15%;
+	  top: -46%;
+	  left: 0%;
 /* 	  background: #0af; */
 	  background: #6CA1FD;
-	  width: 2500px;
-	  height: 2500px;
+	  width: 1400px;
+	  height: 1400px;
+	  margin: 300px;
+	  /* 
 	  margin-left: 0px;
-	  margin-top: -250px;
+	  margin-top: -250px; */
 	  transform-origin: 50% 48%;
 	  border-radius: 43%;
 	  animation: drift 3000ms infinite linear;
@@ -292,10 +294,10 @@
    </style>
 </head>
 <body>
-   <div class="bi bi-list icon project" onclick = ""></div>
+   <div class="bi bi-list icon project" onclick="location.href='/ozone';"></div>
    <div class="bi bi-calendar2-event icon" onclick = ""></div>
    <div class="bi bi-envelope icon" onclick = ""></div>
-   <div class="bi bi-window-sidebar icon" onclick = ""></div>
+   <div class="bi bi-window-sidebar icon" onclick="location.href='/project/column';"></div>
    <div class="bi bi-file-earmark-check icon" onclick = ""></div>
    <div class="bi bi-folder2 icon" onclick = ""></div>
    <div class="bi bi-card-list icon" onclick = ""></div>
