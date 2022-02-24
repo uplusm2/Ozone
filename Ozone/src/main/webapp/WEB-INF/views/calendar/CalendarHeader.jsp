@@ -37,10 +37,10 @@
         
 </style>
 <div class = "header">
-        <div class="bi bi-list icon" onclick = ""></div>
-        <div class="bi bi-calendar2-event icon" onclick = "location.href='/calendar'"></div>
-        <div class="bi bi-envelope icon" onclick = "location.href='/mail'"></div>
-        <div class="bi bi-window-sidebar icon" onclick = ""></div>
+        <div class="bi bi-list icon" onclick = "location.href='/ozone';"></div>
+        <div class="bi bi-calendar2-event icon" onclick = "location.href='/calendar';"></div>
+        <div class="bi bi-envelope icon" onclick = "location.href='/mail';"></div>
+        <div class="bi bi-window-sidebar icon" onclick = "location.href='/project/column';"></div>
         <div class="bi bi-file-earmark-check icon" onclick = ""></div>
         <div class="bi bi-folder2 icon" onclick = ""></div>
         <div class="bi bi-card-list icon" onclick = ""></div>
