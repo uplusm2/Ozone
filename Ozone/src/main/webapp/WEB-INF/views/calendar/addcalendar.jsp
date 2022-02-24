@@ -103,7 +103,7 @@
                 {
                   title: '가나다',
                   url: '/addmemodetail',
-                  start: '2022-02-26'
+                  start: '2022-02-25'
                 }
             ]
         });
