@@ -256,7 +256,7 @@ html, body{
             <div class= "content">
                 <div class = "a">공개하시겠습니까?</div>
 
-                <input type="button" class = "btn btn-check" value="공개" onclick="location.href='view-share'">
+                <input type="button" class = "btn btn-check" value="공개" onclick="location.href='viewshare'">
                 <input type="button" class = "btn btn-check" value="취소" onclick = "history.back()">
             </div>
         </div>    

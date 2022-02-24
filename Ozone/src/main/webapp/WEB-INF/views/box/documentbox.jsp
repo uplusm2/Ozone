@@ -191,7 +191,17 @@ html, body{
       margin-top : 30px;
       height : 50px;
   }
-      
+      .btn{
+            width :70px;
+            height : 40px;
+            background-color: #369;
+            color : white;
+            border : 1px solid white;
+            border-radius: 20px;
+            font-size : 15px;
+            cursor : pointer;
+            margin-top : 20px;
+        }
 
     </style>
 </head>
@@ -230,22 +240,29 @@ html, body{
                         <th id = "date">작성날짜</th>
                     </thead>
                     <tbody>
-                        <tr>
+                    	<tr onclick = "location.href='view'">
                             <th>1</th>
+                            <td>정리노트</td>
+                            <td>txt</td>
+                            <td>이찬우</td>
+                            <td>2022.02.25</td>
+                        </tr>
+                        <tr>
+                            <th>2</th>
                             <td>요구분석서</td>
                             <td>doc</td>
                             <td>이찬우</td>
                             <td>2021.08.12</td>
                         </tr>
                         <tr>
-                            <th>2</th>
+                            <th>3</th>
                             <td>정리</td>
                             <td>xlsx</td>
                             <td>이찬우</td>
                             <td>2021.08.12</td>
                         </tr>
                         <tr>
-                            <th>3</th>
+                            <th>4</th>
                             <td>기획서</td>
                             <td>doc</td>
                             <td>이찬우</td>

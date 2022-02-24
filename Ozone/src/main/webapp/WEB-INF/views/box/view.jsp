@@ -114,7 +114,6 @@ html, body{
 
  table{
      width : 1300px;
-     height : 600px;
      margin-left : 250px;
      margin-top : 70px;
  }
@@ -122,6 +121,7 @@ html, body{
 
  th{
     padding: 10px;
+    height : 300px;
     font-weight: bold;
     vertical-align: middle;
     color: #369;
@@ -211,7 +211,22 @@ html, body{
         .view-table .view-file{
             font-size : 15px;
         }
-
+		
+		.file{
+			height : 50px;
+		}
+		
+		.btn{
+            width :70px;
+            height : 40px;
+            background-color: #369;
+            color : white;
+            border : 1px solid white;
+            border-radius: 20px;
+            font-size : 15px;
+            cursor : pointer;
+            margin-top : 20px;
+        }
        
     </style>
 
@@ -240,20 +255,20 @@ html, body{
             </ul>
         </div>
         <div class>
-            <div class = "tle title-view">고양이</div>
+            <div class = "tle title-view">정리노트</div>
             <br>
             <table class = "view-table">
                 <tr>
                     <th>내용</th>
-                    <td>고양이사진</td>
+                    <td>정리노트입니다</td>
                 </tr>
                 <tr>
-                    <th>파일</th>
-                    <td onclick="location.href="filedownload">cat.jpg</td>
+                    <th class = "file">파일</th>
+                    <td><a href = "C:\cat.png" download="">정리노트.txt</a></td>
                 </tr>
             </table>
             <div class = "btncon">
-                <input type = "button" class = "btn btn-share" value = "공개" onclick="location.href='sharecheck'">
+                <input type = "button" class = "btn" value = "공개" onclick="location.href='sharecheck'">
                 <input type = "button" class = "btn btn-delete" value = "삭제" onclick="location.href='del'">
             </div>
 

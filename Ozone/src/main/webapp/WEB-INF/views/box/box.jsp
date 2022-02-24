@@ -191,6 +191,17 @@ html, body{
       margin-top : 30px;
       height : 50px;
   }
+  .btn{
+            width :70px;
+            height : 40px;
+            background-color: #369;
+            color : white;
+            border : 1px solid white;
+            border-radius: 20px;
+            font-size : 15px;
+            cursor : pointer;
+            margin-top : 20px;
+        }
 </style>
 
 </head>

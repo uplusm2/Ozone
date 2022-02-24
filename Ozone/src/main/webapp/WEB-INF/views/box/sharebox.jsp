@@ -233,8 +233,8 @@ html, body{
                     <tbody>
                      	<tr onclick = "location.href='view'">
                             <th>1</th>
-                            <td>고양이</td>
-                            <td>jpg</td>
+                            <td>정리노트</td>
+                            <td>txt</td>
                             <td>이찬우</td>
                             <td>2022.02.25</td>
                         </tr>

@@ -13,6 +13,12 @@ public class BoxController {
 		return "box.box";
 	}
 	
+	@GetMapping("/boxadd")
+	public String boxadd() {
+		
+		return "box.boxadd";
+	}
+	
 	@GetMapping("/sharebox")
 	public String sharebox() {
 		
@@ -23,6 +29,12 @@ public class BoxController {
 	public String view() {
 		
 		return "box.view";
+	}
+	
+	@GetMapping("/viewshare")
+	public String viewshare() {
+		
+		return "box.viewshare";
 	}
 	
 	@GetMapping("/add")
@@ -48,16 +60,19 @@ public class BoxController {
 		
 		return "box.sharecheck";
 	}
+	
+	@GetMapping("/unsharecheck")
+	public String unsharecheck() {
+		
+		return "box.unsharecheck";
+	}
+	
 	@GetMapping("/del")
 	public String del() {
 		
 		return "box.del";
 	}
 	
-	@GetMapping("/filedownload")
-	public String filedownload() {
-		
-		return "box.filedownload";
-	}
+	
 
 }

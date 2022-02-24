@@ -113,9 +113,8 @@ html, body{
  }
 
 
- table{
+  table{
      width : 1300px;
-     height : 600px;
      margin-left : 250px;
      margin-top : 70px;
  }
@@ -123,6 +122,7 @@ html, body{
 
  th{
     padding: 10px;
+    height : 300px;
     font-weight: bold;
     vertical-align: middle;
     color: #369;
@@ -213,6 +213,17 @@ html, body{
             font-size : 15px;
         }
 
+		.btn{
+            width :70px;
+            height : 40px;
+            background-color: #369;
+            color : white;
+            border : 1px solid white;
+            border-radius: 20px;
+            font-size : 15px;
+            cursor : pointer;
+            margin-top : 20px;
+        }
        
     </style>
 
@@ -240,17 +251,17 @@ html, body{
                 <li onclick = "location.href='documentbox'">문서 보관함</li>
             </ul>
         </div>
-        <div class>
-            <div class = "tle title-view">보관 글 제목</div>
+       <div class>
+            <div class = "tle title-view">정리노트</div>
             <br>
             <table class = "view-table">
                 <tr>
                     <th>내용</th>
-                    <td></td>
+                    <td>정리노트입니다</td>
                 </tr>
                 <tr>
-                    <th>파일</th>
-                    <td></td>
+                    <th class = "file">파일</th>
+                    <td><a href = "C:\정리노트.txt" download="">정리노트.txt</a></td>
                 </tr>
             </table>
             <div class = "btncon">
