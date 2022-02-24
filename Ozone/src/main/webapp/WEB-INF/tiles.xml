@@ -29,8 +29,8 @@
 		<put-attribute name="content" value="/WEB-INF/views/calendar/{1}.jsp"></put-attribute>
 		
 	</definition>
-	<definition name="project.*" template="/WEB-INF/views/project/{1}.jsp">
-	</definition>
+	
+	<definition name="project.*" template="/WEB-INF/views/project/{1}.jsp"/>
 
 	<definition name="memo.*" template="/WEB-INF/views/calendar/base.jsp">
 		
@@ -44,6 +44,8 @@
 		<put-attribute name="content" value="/WEB-INF/views/memo/{1}.jsp"></put-attribute>
 		
 	</definition>
+	
+	<definition name="map.*" template="/WEB-INF/views/memo/{1}.jsp"/>
 	
 	
 </tiles-definitions>
