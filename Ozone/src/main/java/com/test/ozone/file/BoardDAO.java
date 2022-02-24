@@ -27,48 +27,9 @@ public class BoardDAO {
 		return template.selectList("file.rlist");
 	}
 
-	public int madd(MBoardDTO dto) {
-		
-		return template.insert("file.madd", dto);
-	}
-
-	public String getSeq() {
-		
-		return template.selectOne("file.getseq");
-	}
-
-	public int maddFile(FileDTO fdto) {
-		
-		return template.insert("file.maddfile", fdto);
-	}
-
-	public List<MBoardDTO> mlist() {
-		
-		return template.selectList("file.mlist");
-	}
-
-	public List<FileDTO> getFileList(String seq) {
-		
-		return template.selectList("file.mfilelist", seq);
-	}
+	
 	
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
