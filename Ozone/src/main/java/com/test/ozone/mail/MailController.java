@@ -10,7 +10,7 @@ import org.springframework.web.bind.annotation.GetMapping;
 @Controller
 public class MailController {
 
-	@GetMapping("/mail")
+	@GetMapping("/mail/inmail")
 	public String list(HttpServletRequest req, HttpSession session, Model model) {
 		
 		return "mail.inmail";

@@ -1,0 +1,210 @@
+/* container */
+.container {
+    margin-left: 120px;
+    margin-right: 0;
+    padding-left: 0;
+    padding-right: 0;
+    width: 91%;
+}
+
+/* Mail Header */
+.content-title {
+    position: relative;
+    width: 100%;
+    height: 10vh;
+    border-bottom: 1px solid #AAA;
+    padding-left: 90px;
+    font-size: 20px;
+    margin-right: 0;
+}
+
+.content-title h1{
+    padding-top: 10px;
+    font-size: 3rem;
+}
+
+/*  Mail Sidebar */
+.content-sidebar {
+    border-right: 1px solid #AAA;
+    width: 240px;
+    height: 87vh;
+    padding-top: 30px;
+    background-color: white;
+    float: left;
+}
+
+.content-sidebar .sidebar-btn {
+    width: 180px;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+.content-sidebar .sidebar-menu {
+    text-align: center;
+    padding-left: 0px;
+    padding-top: 20px;
+    list-style-type: none;
+}
+
+.content-sidebar .sidebar-menu li {
+    padding: 20px 40px;
+    text-align: left;
+}
+
+.content-sidebar .sidebar-menu li:hover {
+    font-weight: bold;
+    cursor: pointer;
+}
+
+/* Mail Content */
+#mail-content {
+    float: left;
+    width: 70vw;
+    margin: 30px;
+}
+
+/* Mail Menu */
+.mail-menu {
+    position: relative;
+    margin-left: 7px;
+    margin-bottom: 20px;
+}
+
+.mail-menu > input {
+    margin-right: 2px;
+}
+
+.mail-menu > input:first-child {
+    position: relative;
+    top: 6px;
+    margin-right: 5px;
+}
+
+/* Mail Search */
+.search {
+    float: right;
+    overflow: visible;
+    position: relative;
+    z-index: 20;
+    width: 360px;
+    height: 38px;
+    border-radius: 4px;
+    background-color: #f4f4f4;
+    box-sizing: border-box;
+}
+
+.search form input,
+.search form button {
+    background-color: #f4f4f4;
+    border: none;
+    outline: none;
+    box-shadow: none;
+    color: #999;
+}
+
+.search .word {
+    position: absolute;
+    top: 2px;
+    box-shadow: none;
+    width: 260px;
+    font-size: 13px;
+    line-height: 16px;
+    cursor: text;
+    display: inline;
+}
+
+.search .btn-search {
+    width: 40px;
+    position: absolute;
+    top: 2px;
+    left: 260px;
+    line-height: 24px;
+}
+
+.search .btn-search-detail {
+    position: absolute;
+    top: 2px;
+    left: 300px;
+    line-height: 24px;
+}
+
+.search .btn-search:active,
+.search .btn-search-detail:active,
+.search .btn-search-detail:focus {
+    outline: none;
+    border: none;
+    box-shadow: none;
+    color: #999;
+}
+
+.search .btn-search-detail:hover {
+    color: #333;
+}
+
+/* Mail Search Detail*/
+.search-detail {
+    position: absolute;
+    top: 50px;
+    right: 0;
+    z-index: 100;
+    width: 360px;
+    height: 310px;
+    border: 1px solid #d5d5d5;
+    border-radius: 2px;
+    background-color: #fff;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 8%);
+    -webkit-box-shadow: 0 2px 5px 0 rgb(0 0 0 / 8%);
+    box-sizing: border-box;
+}
+
+.search-detail fieldset {
+    padding: 20px 10px;
+}
+
+.search-detail label {
+    width: 80px;
+    padding-bottom: 8px;
+    color: #333;
+    font-weight: 400;
+}
+
+.search-detail input {
+    display: inline;
+    width: 240px;
+    height: 30px;
+    margin-left: 10px;
+}
+
+.search-detail input[type="date"] {
+    width: 113px;
+}
+
+.search-detail input[type="submit"] {
+    position: relative;
+    left: 245px;
+    top: 8px;
+    width: 80px;
+}
+
+
+/* Mail List */
+.mail-list {
+    margin-bottom: 5px;
+}
+
+.mail-list td:nth-child(1) { width: 20px;}
+.mail-list td:nth-child(2) { width: 20px;}
+.mail-list td:nth-child(3) { width: 20px;}
+.mail-list td:nth-child(4) { width: 120px;}
+.mail-list td:nth-child(5) { width: auto;}
+.mail-list td:nth-child(6) { 
+    width: 200px;
+    font-size: 13px;
+    color: #666;
+}
+
+/* Mail Pagination */
+.mail-pagination {
+    width: 450px;
+    margin: 0 auto;
+}

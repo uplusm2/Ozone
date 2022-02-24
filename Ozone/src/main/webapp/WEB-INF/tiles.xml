@@ -60,7 +60,7 @@
 		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp"></put-attribute>
 
 		<!-- mail header -->
-		<put-attribute name="header" value="/WEB-INF/views/inc/mailHeader.jsp"></put-attribute>
+		<put-attribute name="mailHeader" value="/WEB-INF/views/inc/mailHeader.jsp"></put-attribute>
 		
 		<!-- sidebar -->
 		<put-attribute name="header" value="/WEB-INF/views/inc/mailSidebar.jsp"></put-attribute>
