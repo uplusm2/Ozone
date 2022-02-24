@@ -51,6 +51,24 @@
 	
 	<definition name="map.*" template="/WEB-INF/views/memo/{1}.jsp"/>
 	
+	<definition name="mail.*" template="/WEB-INF/views/layout/mailTemplate.jsp">
+			
+		<!-- asset -->
+		<put-attribute name="asset" value="/WEB-INF/views/inc/mailAsset.jsp"></put-attribute> 
+		
+		<!-- header -->
+		<put-attribute name="header" value="/WEB-INF/views/inc/header.jsp"></put-attribute>
+
+		<!-- mail header -->
+		<put-attribute name="header" value="/WEB-INF/views/inc/mailHeader.jsp"></put-attribute>
+		
+		<!-- sidebar -->
+		<put-attribute name="header" value="/WEB-INF/views/inc/mailSidebar.jsp"></put-attribute>
+		
+		<!-- content -->
+		<put-attribute name="content" value="/WEB-INF/views/mail/{1}.jsp"></put-attribute>
+		
+	</definition>
 	
 </tiles-definitions>
 
