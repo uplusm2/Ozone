@@ -31,7 +31,7 @@ public class FileController {
 	@Autowired 
 	private ServletContext context;
 	
-	@RequestMapping(value = "/file/add.do", method = { RequestMethod.GET })
+	@RequestMapping(value = "/file/add", method = { RequestMethod.GET })
 	public String add(HttpServletRequest req, HttpServletResponse resp, HttpSession session) {
 
 		
@@ -39,7 +39,7 @@ public class FileController {
 		return "file.add";
 	}
 	
-	@RequestMapping(value = "/file/addok.do", method = { RequestMethod.POST })
+	@RequestMapping(value = "/file/addok", method = { RequestMethod.POST })
 	public void addok(HttpServletRequest req, HttpServletResponse resp, HttpSession session, BoardDTO dto) {
 
 		//enctype="multipart/form-data" > MultipartHttpServletRequest
@@ -83,7 +83,7 @@ public class FileController {
 		int result = dao.add(dto);
 		
 		try {
-			resp.sendRedirect("/ozone/file/list.do");
+			resp.sendRedirect("/ozone/file/list");
 		} catch (IOException e) {
 			e.printStackTrace();
 		}	
@@ -117,7 +117,7 @@ public class FileController {
 		
 	}
 
-	@RequestMapping(value = "/file/list.do", method = { RequestMethod.GET })
+	@RequestMapping(value = "/file/list", method = { RequestMethod.GET })
 	public String list(HttpServletRequest req, HttpServletResponse resp, HttpSession session) {
 
 		List<BoardDTO> list = dao.list();
@@ -128,10 +128,10 @@ public class FileController {
 	}
 	
 	
-	@RequestMapping(value = "/file/rlist.do", method = { RequestMethod.GET })
+	@RequestMapping(value = "/file/rlist", method = { RequestMethod.GET })
 	public String rlist(HttpServletRequest req, HttpServletResponse resp, HttpSession session) {
 
-		List<BoardDTO> rlist = dao.list();
+		List<BoardDTO> rlist = dao.rlist();
 		
 		req.setAttribute("rlist", rlist);
 
@@ -139,7 +139,7 @@ public class FileController {
 	}
 	
 	
-	@RequestMapping(value = "/file/download.do", method = { RequestMethod.GET })
+	@RequestMapping(value = "/file/download", method = { RequestMethod.GET })
 	public void download(HttpServletRequest req, HttpServletResponse resp, HttpSession session) throws Exception {
 
 		String fileName = req.getParameter("filename");
