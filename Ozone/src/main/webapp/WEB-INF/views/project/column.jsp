@@ -1,5 +1,8 @@
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
+<%
+	String root = request.getContextPath();
+%>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,16 +10,16 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>OZONE</title>
-   <link rel="stylesheet" href="css/main.css">
-   <link rel="stylesheet" href="css/jquery-ui.css">
-   <link rel="stylesheet" href="css/bootstrap.css">
-   <link rel="stylesheet" href="css/bootstrap.min.css">
+   <link rel="stylesheet" href="<%= root %>/resources/css/main.css">
+   <link rel="stylesheet" href="<%= root %>/resources/css/jquery-ui.css">
+   <link rel="stylesheet" href="<%= root %>/resources/css/bootstrap.css">
+   <link rel="stylesheet" href="<%= root %>/resources/css/bootstrap.min.css">
    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.7.1/font/bootstrap-icons.css">
-   <link href='fullcalendar-5.10.2/lib/main.css' rel='stylesheet' />
-   <script src='fullcalendar-5.10.2/lib/main.js'></script>
-   <script src="js/jquery-1.12.4.min.js"></script>
-   <script src="js/jquery-ui.js"></script>
-   <script src="js/bootstrap.min.js"></script>
+   <link href='<%= root %>/resources/fullcalendar-5.10.2/lib/main.css' rel='stylesheet' />
+   <script src='<%= root %>/resources/fullcalendar-5.10.2/lib/main.js'></script>
+   <script src="<%= root %>/resources/js/jquery-1.12.4.min.js"></script>
+   <script src="<%= root %>/resources/js/jquery-ui.js"></script>
+   <script src="<%= root %>/resources/js/bootstrap.min.js"></script>
    <style>
 	@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Black+Han+Sans&family=Gothic+A1:wght@300;400;500;600;700;800;900&family=Gowun+Dodum&family=IBM+Plex+Sans+KR:wght@100;200;300;400;500;600;700&family=Josefin+Sans:ital,wght@0,700;1,700&family=Jua&family=Nanum+Gothic:wght@700;800&family=Nanum+Pen+Script&family=Noto+Sans+KR:wght@400;500;700&family=Rubik&display=swap');
 	
@@ -289,7 +292,7 @@
 	   /* border: 1px solid #9bacff93; */
 	   /* background: #dbdcdf10; */
 	   background: rgb(255, 255, 255);
-	   height: 78px;
+	   height: 95px;
 	   padding: 10px;
 	   padding-left: 18px;
 	   border-radius: 10px;
@@ -392,6 +395,107 @@
 	.project-column .title {
 	   cursor: pointer;
 	}
+	
+	/* project-calendar */
+	.project-calendar {
+	   position: absolute;
+	   right: 130px;
+	   top: 0;
+	   width: 500px;
+	   float: left;
+	   font-size: 14px;
+	   font-weight: 500;
+	   /* overflow: hidden; */
+	}
+	.project-calendar #calendar{
+	   /* width: 500px; */
+	   width: 395px;
+	   height: 370px;
+	   position: relative;
+	   right: -130px;
+	}
+	.project-calendar #calendar:after {
+	   position: absolute;
+	   right: -32px;
+	   top: 55px;
+	   content: '';
+	   width: 50px;
+	   height: 315px;
+	   /* background: #fff; */
+	   background: #F5F8FF;
+	   border-left: 1px solid #DDDDDD;
+	}
+	.project-calendar .fc-scroller {
+	   overflow-y: hidden !important;
+	}
+	.project-calendar img {
+	   position: relative;
+	   bottom: -120px;
+	   right: -140px;
+	   width: 400px;
+	}
+	.project-calendar .fc-toolbar-title {
+	   position: relative;
+	   width: 200px;
+	   padding-left: 0;
+	   text-align: center;
+	   /* background: #000; */
+	   left: 90px;
+	   font-weight: 500;
+	   color: #5C6F7E;
+	}
+	.project-calendar .fc-today-button.fc-button.fc-button-primary {
+	   position: relative;
+	   left: -100px;
+	   opacity: 0;
+	}
+	.project-calendar .fc-prev-button.fc-button.fc-button-primary,
+	.project-calendar .fc-next-button.fc-button.fc-button-primary {
+	   position: relative;
+	   left: -265px;
+	   background: #F5F8FF;
+	   /* background: #fff;  */
+	   border: #fff;  
+	   color: #DFDFDF;
+	   transition: all 0.3s;
+	   /* opacity: 0; */
+	}
+	.project-calendar .fc-prev-button.fc-button.fc-button-primary:hover,
+	.project-calendar .fc-next-button.fc-button.fc-button-primary:hover {
+	   color: #9BABFF;
+	   transition: all 0.3s;
+	   border: 0;
+	}
+	.project-calendar .fc-prev-button.fc-button.fc-button-primary ,
+	.project-calendar .fc-next-button.fc-button.fc-button-primary {
+	   border: 0px;
+	}
+	.project-calendar .fc-next-button.fc-button.fc-button-primary {
+	   left: -77px;
+	}
+	.project-calendar .fc-col-header-cell-cushion {
+	   color: #fff;
+	   font-weight: 500;
+	}
+	.project-calendar .fc-col-header-cell.fc-day {
+	   background: #9BACFF;
+	}
+	.project-calendar .fc-daygrid-day-number {
+	   color: #5C6F7E;
+	   cursor: pointer;
+	   /* background: #F5F8FF; */
+	}
+	.project-calendar .fc-daygrid-day-number:hover {
+	   text-decoration: none;
+	}
+	.project-calendar .fc-daygrid-day.fc-day {
+	   /* background-color: #F5F8FF; */
+	   background-color: #fff;
+	}
+	.project-calendar .fc-daygrid-day.fc-day.fc-day-today {
+	   background-color: #fff;
+	   font-weight: 700;
+	}
    </style>
    
 </head>
@@ -424,7 +528,7 @@
             <ul class="project">
                <li class="title">짱기 2주 완성<span class="high">High🔥</span></li>
                <li>
-                  <img src="img/유미 후우.png">
+                  <img src="<%= root %>/resources/img/유미 후우.png">
                </li>
                <li>Mar 05, 2022</li>
             </ul>
@@ -434,12 +538,12 @@
             <ul class="project">
                <li class="title">고구마켓(MVC)<span class="low">Low</span></li>
                <li>
-                  <img src="img/유미 후우.png">
-                  <img src="img/우는 사람.png">
-                  <img src="img/인사하는 노랭이.png">
-                  <img src="img/화이팅현우.png">
-                  <img src="img/터진 현우님.png">
-                  <img src="img/오 혜인님.png">
+                  <img src="<%= root %>/resources/img/유미 후우.png">
+                  <img src="<%= root %>/resources/img/우는 사람.png">
+                  <img src="<%= root %>/resources/img/인사하는 노랭이.png">
+                  <img src="<%= root %>/resources/img/화이팅현우.png">
+                  <img src="<%= root %>/resources/img/터진 현우님.png">
+                  <img src="<%= root %>/resources/img/오 혜인님.png">
                   <!-- <span>+3</span> -->
                </li>
                <li>Feb 20, 2022</li>
@@ -447,21 +551,21 @@
             <ul class="project">
                <li class="title">파이널 프로젝트 오존 <span class="high">High🔥</span></li>
                <li>
-                  <img src="img/유미 후우.png">
-                  <img src="img/개발자.png">
-                  <img src="img/뿌우.png">
-                  <img src="img/오 혜인님.png">
-                  <img src="img/화이팅현우.png">
-                  <img src="img/터진 헤인님.png">
+                  <img src="<%= root %>/resources/img/유미 후우.png">
+                  <img src="<%= root %>/resources/img/개발자.png">
+                  <img src="<%= root %>/resources/img/뿌우.png">
+                  <img src="<%= root %>/resources/img/오 혜인님.png">
+                  <img src="<%= root %>/resources/img/화이팅현우.png">
+                  <img src="<%= root %>/resources/img/터진 헤인님.png">
                </li>
                <li>Mar 15, 2022</li>
             </ul>
             <ul class="project">
                <li class="title">뒤지개 단기<span class="middle">Middle</span></li>
                <li>
-                  <img src="img/유미 후우.png">
-                  <img src="img/연락 준영.png">
-                  <img src="img/터진 현우님.png">
+                  <img src="<%= root %>/resources/img/유미 후우.png">
+                  <img src="<%= root %>/resources/img/연락 준영.png">
+                  <img src="<%= root %>/resources/img/터진 현우님.png">
                </li>
                <li>Feb 22, 2022</li>
             </ul>
@@ -470,21 +574,21 @@
             <ul class="project">
                <li class="title">교육 센터 DB 구축<span>Low</span></li>
                <li>
-                  <img src="img/유미 후우.png">
-                  <img src="img/터진 헤인님.png">
-                  <img src="img/개발자.png">
-                  <img src="img/오 혜인님.png">
-                  <img src="img/연락 준영.png">
+                  <img src="<%= root %>/resources/img/유미 후우.png">
+                  <img src="<%= root %>/resources/img/터진 헤인님.png">
+                  <img src="<%= root %>/resources/img/개발자.png">
+                  <img src="<%= root %>/resources/img/오 혜인님.png">
+                  <img src="<%= root %>/resources/img/연락 준영.png">
                </li>
                <li>Nov 05, 2022</li>
             </ul>
             <ul class="project">
                <li class="title">알고리즘 마스터<span class="middle">Middle</span></li>
                <li>
-                  <img src="img/유미 후우.png">
-                  <img src="img/인사 헤인.png">
-                  <img src="img/뿌우현우.png">
-                  <img src="img/인사하는 노랭이.png">
+                  <img src="<%= root %>/resources/img/유미 후우.png">
+                  <img src="<%= root %>/resources/img/인사 헤인.png">
+                  <img src="<%= root %>/resources/img/뿌우현우.png">
+                  <img src="<%= root %>/resources/img/인사하는 노랭이.png">
                </li>
                <li>Dec 30, 3030</li>
             </ul>
@@ -493,24 +597,24 @@
             <ul class="project">
                <li class="title">자바 콘솔 용용랜드 <span class="middle">Middle</span></li>
                <li>
-                  <img src="img/유미 후우.png">
-                  <img src="img/뿌우현우.png">
-                  <img src="img/연락 준영.png">
-                  <img src="img/터진 현우님.png">
-                  <img src="img/화이팅현우.png">
-                  <img src="img/뿌우.png">
+                  <img src="<%= root %>/resources/img/유미 후우.png">
+                  <img src="<%= root %>/resources/img/뿌우현우.png">
+                  <img src="<%= root %>/resources/img/연락 준영.png">
+                  <img src="<%= root %>/resources/img/터진 현우님.png">
+                  <img src="<%= root %>/resources/img/화이팅현우.png">
+                  <img src="<%= root %>/resources/img/뿌우.png">
                </li>
                <li>Oct 23, 2021</li>
             </ul>
             <ul class="project">
                <li class="title">뿌리 깊은 국사 <span class="low">Low</span></li>
-               <li><img src="img/유미 후우.png"></li>
+               <li><img src="<%= root %>/resources/img/유미 후우.png"></li>
                <li>Feb 07, 2022</li>
             </ul>
             <ul class="project">
                <li class="title">개발자 포트폴리오<span class="high">High🔥</span></li>
                <li>
-                  <img src="img/유미 후우.png">
+                  <img src="<%= root %>/resources/img/유미 후우.png">
                </li>
                <li>Jan 02, 2022</li>
             </ul>
@@ -518,7 +622,7 @@
       </section>
       <section class="project-calendar">
          <div id="calendar"></div>
-         <img src="img/desk.png" alt="">
+         <img src="<%= root %>/resources/img/desk.png" alt="">
       </section>
    </div>
 </body>

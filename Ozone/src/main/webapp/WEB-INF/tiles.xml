@@ -30,6 +30,8 @@
 		
 	</definition>
 	<definition name="project.*" template="/WEB-INF/views/project/{1}.jsp">
+		<!-- asset -->
+		<put-attribute name="asset" value="/WEB-INF/views/inc/calendarAsset.jsp"></put-attribute> 
 	</definition>
 
 	<definition name="memo.*" template="/WEB-INF/views/calendar/base.jsp">
