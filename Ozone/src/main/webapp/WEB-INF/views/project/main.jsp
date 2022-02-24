@@ -294,7 +294,7 @@
    </style>
 </head>
 <body>
-   <div class="bi bi-list icon project" onclick = ""></div>
+   <div class="bi bi-list icon project" onclick="location.href='/ozone';"></div>
    <div class="bi bi-calendar2-event icon" onclick = ""></div>
    <div class="bi bi-envelope icon" onclick = ""></div>
    <div class="bi bi-window-sidebar icon" onclick="location.href='/project/column';"></div>
