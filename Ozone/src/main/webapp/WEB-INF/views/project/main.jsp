@@ -61,14 +61,14 @@
 		margin: 60px auto;
 	}
 	.wrap {
-/* 	   background: #6CA1FD;; */
+/*  	   background: #6CA1FD; */
 /* 	   background: #fff; */
 	   /* background: #Fff; */
 	   /* width: 100%; */
 	   overflow: hidden;
 	   height: 100vh;
 	   position: relative;
-	   z-index: -1;
+	   z-index: -3;
 	}
 	html, body{
 	   height : 100%;
@@ -256,12 +256,12 @@
 	   box-shadow: 3px 3px 3px rgba(0, 0, 0, 0.13);
 	}
 	.wave {
-	  opacity: .4;
+	  opacity: .6;
 	  position: absolute;
 	  bottom: 4%;
 	  left: -15%;
 /* 	  background: #0af; */
-	  background: #749FFE;
+	  background: #6CA1FD;
 	  width: 2500px;
 	  height: 2500px;
 	  margin-left: 0px;
@@ -280,7 +280,7 @@
 	  animation: drift 7000ms infinite linear;
 	  opacity: .1;
 /* 	  background: yellow; */
-	  background: #FF738E;
+	  background: #749FFE;
 	}
 	@keyframes drift {
  	 from { transform: rotate(0deg); }
