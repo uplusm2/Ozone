@@ -236,3 +236,12 @@
     width: 80px;
     margin-left: 0px;
 }
+
+/* View Mail*/
+.view-mail-content label {
+    width: 100px;
+    padding-bottom: 8px;
+    color: #333;
+    font-weight: 400;
+}
+

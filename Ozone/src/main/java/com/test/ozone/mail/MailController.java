@@ -2,6 +2,10 @@ package com.test.ozone.mail;
 
 import java.util.ArrayList;
 
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -42,8 +46,19 @@ public class MailController {
 		return "redirect:/mail/inmail";
 	}
 	
+	@PostMapping("/mail/sendok")
+	public String sendok() {
+		
+		return "mail.sendok";
+	}
+	
 	@GetMapping("/mail/viewmail")
-	public String viewmail() {
+	public String viewmail(HttpServletRequest req, HttpSession session, HttpServletResponse resp, String seq, Model model) {
+		
+		String id = req.getParameter("id");
+		
+		model.addAttribute("id", id);
+		req.setAttribute("id", id);
 		
 		return "mail.viewmail";
 	}

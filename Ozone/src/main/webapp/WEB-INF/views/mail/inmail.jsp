@@ -63,7 +63,7 @@
         <td><i class="bi bi-star"></i></td>
         <td><i class="bi bi-envelope"></i></td>
         <td style="color:cornflowerblue">이유미</td>
-        <td style="color:cornflowerblue">안녕하세요 이유미입니다</td>
+        <td style="color:cornflowerblue" onclick="location.href='/mail/viewmail?seq=168';">안녕하세요 이유미입니다</td>
         <td>08:45</td>
     </tr>
     <tr>
