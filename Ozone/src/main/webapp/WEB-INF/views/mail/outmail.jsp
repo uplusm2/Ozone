@@ -3,7 +3,7 @@
 
 <div class="mail-menu">
     <input type="checkbox" name="cbAll">
-    <input type="button" class="btn btn-default" value="삭제">
+    <input type="button" class="btn btn-default" id="btnDel" value="삭제">
     <input type="button" class="btn btn-default" value="스팸차단">
     <input type="button" class="btn btn-default" value="전달">
     <input type="button" class="btn btn-default" value="답장">
@@ -41,86 +41,22 @@
     </div>
 </div>
 
-<table class="table table-hover mail-list">
+<table class="table table-hover mail-list" id="mailTable">
     <tr>
         <td><input type="checkbox" name="cb"></td>
         <td><i class="bi bi-star"></i></td>
         <td><i class="bi bi-envelope"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 삼겹살 먹고싶다.</td>
-        <td>22.02.14 22:36</td>
+        <td>이유미</td>
+        <td>반갑습니다.</td>
+        <td id="currentDate">22.02.14 22:36</td>
     </tr>
     <tr>
         <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star-fill"></i></td>
+        <td><i class="bi bi-star"></i></td>
         <td><i class="bi bi-envelope"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 짬뽕먹고싶다.</td>
-        <td>22.02.14 22:36</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star"></i></td>
-        <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>연어초밥 먹고싶다.</td>
-        <td>22.02.14 22:36</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star"></i></td>
-        <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star"></i></td>
-        <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star"></i></td>
-        <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star"></i></td>
-        <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star"></i></td>
-        <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star"></i></td>
-        <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
-    </tr>
-    <tr>
-        <td><input type="checkbox" name="cb"></td>
-        <td><i class="bi bi-star"></i></td>
-        <td><i class="bi bi-envelope-open"></i></td>
-        <td>보낸사람</td>
-        <td>제목입니다. 푸라닭먹고싶다.</td>
-        <td>22.02.14 22:36</td>
+        <td>김철수</td>
+        <td>안녕하세요~</td>
+        <td id="currentDate">22.02.14 22:36</td>
     </tr>
 </table>
 
@@ -132,15 +68,6 @@
             </a>
         </li>
         <li><a href="#">1</a></li>
-        <li><a href="#">2</a></li>
-        <li><a href="#">3</a></li>
-        <li><a href="#">4</a></li>
-        <li><a href="#">5</a></li>
-        <li><a href="#">6</a></li>
-        <li><a href="#">7</a></li>
-        <li><a href="#">8</a></li>
-        <li><a href="#">9</a></li>
-        <li><a href="#">10</a></li>
         <li>
             <a href="#" aria-label="Next">
                 <span aria-hidden="true">&raquo;</span>
@@ -148,3 +75,20 @@
         </li>
     </ul>
 </nav>
+
+<script>
+date = new Date();
+year = date.getFullYear();
+month = date.getMonth() + 1;
+day = date.getDate();
+hours = date.getHours();
+minutes = date.getMinutes();
+document.getElementById("currentDate").innerHTML = hours + ":" + minutes;
+
+
+
+$('#btnDel').on('click', function() {
+	$('#mailTable').html("<tr><td colspan='5' style='text-align:center'>메일함이 비었습니다.</td></tr>");
+});
+
+</script>

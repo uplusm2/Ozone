@@ -8,8 +8,8 @@
     </div>
     <ul class="sidebar-menu">
         <li onclick="">전체메일함</li>
-        <li onclick="location.href='/mail/inmail'">받은메일함 <span class="badge">4</span></li>
-        <li onclick="">보낸메일함</li>
+        <li onclick="location.href='/mail/inmail'">받은메일함</li>
+        <li onclick="location.href='/mail/outmail'">보낸메일함</li>
         <li onclick="">내게쓴메일함</li>
         <li onclick="">휴지통</li>
     </ul>
