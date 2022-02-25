@@ -61,7 +61,7 @@
 		margin: 60px auto;
 	}
 	.wrap {
-/*  	   background: #6CA1FD; */
+  	   background: #F5F8FF; 
 /* 	   background: #fff; */
 	   /* background: #Fff; */
 	   /* width: 100%; */
