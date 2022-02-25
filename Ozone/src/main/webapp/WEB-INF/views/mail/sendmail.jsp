@@ -13,6 +13,6 @@
         <input type="text" name="subject" class="form-control"><br>
         <label for="file">파일첨부</label>
         <input type="file" name="file">
-        <textarea class="summernote" name="content">${id}</textarea>
+        <textarea class="summernote" name="content"></textarea>
     </form>
 </div>
